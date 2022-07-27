@@ -1,0 +1,11 @@
+.notfound {
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.notfound_info {
+    padding-top: 45vh;
+    font-weight: 400;
+    font-size: 50px;
+}

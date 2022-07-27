@@ -1,0 +1,125 @@
+.newsFlex {
+    width: 100%;
+    display: flex;
+    height: max-content;
+    top: 0;
+}
+
+.newsSide {
+    width: 25%;
+    writing-mode: vertical-rl;
+    font-size: 70px;
+    font-weight: 200;
+    height: 500px;
+    left: 0;
+    top: 0;
+    position: sticky;
+    background-color: white;
+}
+
+.newsSide > div {
+    padding-top: 20%;
+    padding-right: 30%;
+}
+
+.newsContent {
+    width: 50%;
+    height: 100vh;
+}
+
+.newsContent > hr {
+    width: 100%;
+    margin: 30px 0;
+    background-color: lightgray;
+    height: 1px;
+}
+
+.newsTitle {
+    letter-spacing: -1px;
+    font-weight: 200;
+    font-size: 40px;
+}
+
+.newsDesc {
+    width: 50%;
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 200;
+}
+
+.NewsContentsInfo {
+    display: flex;
+}
+
+.NewsDate {
+    font-size: 13px;
+    margin-top: 6px;
+    color: grey;
+    font-weight: 200;
+}
+
+.Newsday {
+    font-size: 11px;
+    margin-top: 6px;
+    color: grey;
+    font-weight: 200;
+}
+
+.NewsTap > hr {
+    width: auto;
+    height: 5px;
+    background-color: black;
+    margin-bottom:0;
+}
+
+.NewsMore {
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: -0.5px; 
+    margin-top: 17px;
+}
+
+.NewsContents {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 100px;
+    padding-left: 15px;
+    border-bottom: 1px solid rgb(218, 218, 218);
+    background-color: white;
+    letter-spacing: -0.5px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    display: block;
+    clear:both;
+}
+
+.newsContent {
+    padding-top: 100px;
+}
+
+.New_icon {
+    font-size: 9px;
+    border-radius: 5px;
+    background-color: red;
+    width: max-content;
+    padding: 2px 5px;
+    color:white;
+    margin-top: 5px;
+    margin-right: 8px;
+}
+
+.New_icon_inpage {
+    font-size: 9px;
+    border-radius: 5px;
+    background-color: red;
+    width: max-content;
+    padding: 2px 5px;
+    color:white;
+    margin-bottom: 5px;
+}
+
+.NewsContents:hover {
+    background-color: rgb(240, 240, 240);
+    transition: all 0.2s ease-in-out;
+}

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700;900&display=swap');
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    z-index: 10;
+    top: 0px;
+    position: sticky;
+    transition: all 0.2s ease-in-out;
+    font-family: 'Spoqa Han Sans Neo';
+    color: gray;
+}
+
+.active {
+    color: rgb(255, 123, 0);
+}
+
+.header.scroll {
+    top: -80px;
+}
+
+.header > .HeaderArticle_1 {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px 0 50px;
+}
+
+.header > .HeaderArticle_1 > div {
+    vertical-align: middle;
+    width: 130px;
+    margin-top: 20px;
+    margin-left: 30px;
+    padding-right: 15px;
+    height: max-content;
+}
+
+.header > .HeaderArticle_1 > ul {
+    list-style: none;
+    display: flex;
+    margin-left: -10px;
+    color: gray;
+}
+
+.header > .HeaderArticle_1 > ul > li {
+    padding-right: 12px;
+    letter-spacing: -1px;
+    font-weight: 700;
+}
+
+.header > .HeaderArticle_1 > ul > li > div {
+    color: auto;
+    transition: all 0.1s ease;
+}
+
+.header > .HeaderArticle_1 > ul > li > div:hover {
+    color: black !important;
+    transition: all 0.2s ease;
+}
+
+.header > .HeaderArticle_2 {
+    margin-top: 7px;
+    color: black;
+}
+
+.header > .HeaderArticle_2 > ul {
+    list-style: none;
+    display: flex;
+}
+
+.header > .HeaderArticle_2 > ul > li {
+    font-size: 23px;
+    padding-right: 15px;
+}

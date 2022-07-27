@@ -1,23 +1,40 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+
+import Portfolio from './componenets/portfolio';
+import Header from './componenets/header';
+import Home from './componenets/home';
+import Footer from './componenets/footer';
+import NotFound from './componenets/404';
+import News from './componenets/news';
+import Discography from "./componenets/discography";
+
+import NewsOne from './componenets/news/220314';
+import NewsTwo from './componenets/news/220405';
+import NewsThree from './componenets/news/220629';
+import NewsFour from './componenets/news/220728';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <Header />
+          <div className="App">
+            <Routes>
+              <Route exact path="/" element={<Home />}></Route>
+              <Route path="/portfolio" element={<Portfolio />}></Route>
+              <Route path="/discography" element={<Discography />}></Route>
+              <Route path="/news" element={ <News /> }></Route>
+              <Route path='/news/220728' element={ <NewsFour/> }></Route>
+              <Route path='/news/220629' element={ <NewsThree/> }></Route>
+              <Route path='/news/220405' element={ <NewsTwo/> }></Route>
+              <Route path='/news/220314' element={ <NewsOne />}></Route>
+              <Route path="*" element={<NotFound />}></Route>
+            </Routes>
+          </div>
+        <Footer />
+        
     </div>
   );
 }
