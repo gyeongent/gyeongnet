@@ -13,7 +13,7 @@ const Container = () => (
         <div className="maintitle">
             나의 판타지 세계
         </div>
-        <div style={{height: '40vw'}} />
+        <div className='MainSection' />
     </Parallax>
 );
 
@@ -27,8 +27,45 @@ function HomeScreen() {
 
 function PfoList() {
 
+    function setColor(strValue){
+
+        var pfobtn = document.getElementsByClassName('pfo_btn');
+        var pfohr = document.getElementsByClassName('pfo_hr');
+
+        if (strValue == "1") {
+            pfobtn[0].classList.add("clicked");
+            pfobtn[1].classList.remove("clicked");
+            pfobtn[2].classList.remove("clicked");
+            pfohr[0].classList.add("clicked");
+            pfohr[1].classList.remove("clicked");
+            pfohr[2].classList.remove("clicked");
+        } else if (strValue == "2") {
+            pfobtn[0].classList.remove("clicked");
+            pfobtn[1].classList.add("clicked");
+            pfobtn[2].classList.remove("clicked");
+            pfohr[0].classList.remove("clicked");
+            pfohr[1].classList.add("clicked");
+            pfohr[2].classList.remove("clicked");
+        } else if (strValue == "3") {
+            pfobtn[0].classList.remove("clicked");
+            pfobtn[1].classList.remove("clicked");
+            pfobtn[2].classList.add("clicked");
+            pfohr[0].classList.remove("clicked");
+            pfohr[1].classList.remove("clicked");
+            pfohr[2].classList.add("clicked");
+        } else {
+            pfobtn[0].classList.remove("clicked");
+            pfobtn[1].classList.remove("clicked");
+            pfobtn[2].classList.remove("clicked");
+            pfohr[0].classList.remove("clicked");
+            pfohr[1].classList.remove("clicked");
+            pfohr[2].classList.remove("clicked");
+        }
+    }
+    
+
     let [setContents, useContents] = useState([
-        '그래픽',
+        '디자인에 공감을 더하다',
         '유년기 시절부터 창의적인 만들기를 좋아했었습니다. 그렇게 자라 내가 상상하던 작품을 만들게 되었고 그 모든 작품 안에는  누구나 쉽게 "공감" 할수 있는 메세지를 담도록 노력했습니다.',
         '링크 바로가기',
     ])
@@ -61,25 +98,27 @@ function PfoList() {
             '링크 바로가기',
         ];
         useContents( newMusics );
-
-        
     }
+
+    
+
+    
 
     return (
         <div className="pfo_contents">
             <div className="pfo_nav">
                 <ul>
-                    <li className="pfo_btn" onClick={ Graphics }>
+                    <li className="pfo_btn" onClick={ () => {Graphics(); setColor(1);} }>
                         그래픽
-                        <hr />
+                        <hr className='pfo_hr'/>
                     </li>
-                    <li onClick={ Games }>
+                    <li className="pfo_btn" onClick={ () => {Games(); setColor(2);} }>
                         게임
-                        <hr />
+                        <hr className='pfo_hr'/>
                     </li>
-                    <li onClick={ Musics }>
+                    <li className="pfo_btn" onClick={ () => {Musics(); setColor(3);} }>
                         음악
-                        <hr />
+                        <hr className='pfo_hr'/>
                     </li>
                 </ul>
             </div>
@@ -103,7 +142,7 @@ function PfoList() {
 
 function Portfolio() {
     return (
-        <div>
+        <div className='homeBody'>
             <HomeScreen />
             <PfoList />
         </div>

@@ -19,8 +19,9 @@ import './App.css';
 function App() {
   return (
     <div>
-        <Header />
+      <Header />
           <div className="App">
+          
             <Routes>
               <Route exact path="/" element={<Home />}></Route>
               <Route path="/portfolio" element={<Portfolio />}></Route>
@@ -32,8 +33,11 @@ function App() {
               <Route path='/news/220314' element={ <NewsOne />}></Route>
               <Route path="*" element={<NotFound />}></Route>
             </Routes>
+            
           </div>
-        <Footer />
+          <Footer />
+          
+        
         
     </div>
   );

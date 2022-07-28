@@ -36,9 +36,9 @@
     width: max-content;
 }
 
-.pfo_nav > ul > li > hr {
+.pfo_hr {
     width: 0%;
-    background-color: black;
+    background-color: tomato;
     height: 3px;
     text-align: left;
     margin-left: 0;
@@ -50,7 +50,7 @@
     cursor: pointer;
 }
 
-.pfo_nav > ul > li:hover hr {
+.pfo_nav > ul > li:hover .pfo_hr {
     width: 100%;
 }
 
@@ -73,4 +73,62 @@
 
 .pfo_go {
     margin-top: 30px;
+}
+
+.pfo_btn {
+    color: black;
+    transition: all 0.2s ease;
+}
+
+.pfo_btn:hover {
+    color: tomato;
+}
+
+
+.clicked {
+    color: tomato;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .homeBody {
+        width: 100%;
+    }
+
+    .pfo_contents {
+        display: block;
+        width: 100%;
+        padding: 5vw;
+    }
+
+    .pfo_nav {
+        width: 90%;
+        top: none;
+        left: none;
+        background-color: #fff;
+        text-align: center;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    .pfo_nav > ul {
+        display: flex;
+        width: 95%;
+        justify-content: space-between;
+        margin: 0;
+        align-items: center;
+    }
+    
+    .pfo_nav > ul > li {
+        padding: 20px;
+        font-weight: 700;
+        font-size: 20px;
+        width: max-content;
+    }
+
+    .pfo_info {
+        width: 80%;
+        padding: 5vw;
+    }
 }

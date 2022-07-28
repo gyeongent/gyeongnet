@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;400;700;900&display=swap');
 @import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700;900&display=swap');
 
@@ -5,7 +6,7 @@
   margin-top: 80px;
   margin: 0;
     padding: 0;
-    font-family: 'Spoqa Han Sans Neo', 'Noto Sans KR', 'sans-serif';
+    font-family: 'Jost', 'Spoqa Han Sans Neo', 'Noto Sans KR', 'sans-serif';
     font-weight: 100;
     letter-spacing: -1px;
     overflow-x: hidden;

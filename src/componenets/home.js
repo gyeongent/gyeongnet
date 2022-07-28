@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Parallax } from 'react-parallax';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { newsinfo } from '../data/news.json';
 
 import Soon from '../img/soon.jpg';
@@ -18,7 +18,7 @@ const Container = () => (
         <div className="maintitle">
             GYEONG Studio에 오신 것을 환영합니다.
         </div>
-        <div style={{height: '40vw'}} />
+        <div className="MainSection"/>
     </Parallax>
 );
 
@@ -87,9 +87,9 @@ function NewsTap(props) {
     );
 }
 
-function AllNews(props) {
+function AllNews() {
 
-    let [setTitle, useTitle] = useState([
+    let [setTitle] = useState([
         '-',
         '-',
         '-',
@@ -135,18 +135,48 @@ function AllNews(props) {
 }
 
 function HomeContents(props) {
+
+    function showModal(){
+        var modal = document.getElementsByClassName('roundbox')[0];
+        var modalbox = document.getElementsByClassName('roundmodal')[0];
+        
+        modal.addEventListener("click", () => {
+            modalbox.style.display = 'block';
+            modalbox.style.opacity = '100%';
+        });
+    }
+
+    function closeModal(){
+        var close = document.getElementsByClassName('closeBtn')[0]; 
+        var modalbox = document.getElementsByClassName('roundmodal')[0];
+        
+        close.addEventListener("click", () => {
+            modalbox.style.display = 'none';
+        });
+    }
+    
     return(
-        <div className='roundbox'>
-            <div className='roundimg'>
-                <img src={ props.contentimg }/>
+        <>
+            <div className='roundbox' onClick={ showModal }>
+                <div className='roundimg'>
+                    <img src={ props.contentimg } alt='Project_img'/>
+                </div>
+                <div className='roundtitle'>
+                    { props.contenttitle }
+                </div>
+                <div className='rounddesc'>
+                    { props.contentdesc }
+                </div>
             </div>
-            <div className='roundtitle'>
-                { props.contenttitle }
+            <div className="roundmodal">
+                <div className='roundmodalindex'>
+                    <div className='modalImg'>
+                        <img src={ props.contentimg } alt='Project_img'/>
+                    </div>
+                    <div className='closeBtn' onClick={ closeModal }>닫기</div>
+                </div>
             </div>
-            <div className='rounddesc'>
-                { props.contentdesc }
-            </div>
-        </div>
+        </>
     );
 }
 
@@ -157,12 +187,12 @@ function Contents() {
                 대표 프로젝트
             </div>
             <div className="flexcontent">
-                <HomeContents 
+                <HomeContents
                     contentimg={LSimg}
                     contenttitle="라이프 세이브스"
                     contentdesc="라이프 세이브스 《Chapter 1》"
                 />
-                <HomeContents 
+                <HomeContents
                     contentimg={Soon}
                     contenttitle="라이프 세이브스"
                     contentdesc="라이프 세이브스 《Chapter 2》"
@@ -175,7 +205,7 @@ function Contents() {
 
 function Home() {
     return (
-      <div>
+      <div className="homeBody">
         <HomeScreen />
         <AllNews />
         <Contents />

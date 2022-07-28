@@ -1,5 +1,4 @@
 import React from 'react';
-import Soon from '../img/soon.jpg';
 import Anxiety from '../img/album/anxiety_cover.jpg';
 import Aurora from '../img/album/aurora_cover.jpg';
 
@@ -10,7 +9,7 @@ function DiscoContents(props) {
     return(
         <div className='roundbox'>
             <div className='roundimg'>
-                <img src={ props.contentimg }/>
+                <img src={ props.contentimg } alt='Cover_img'/>
             </div>
             <div className='roundtitle'>
                 { props.contenttitle }

@@ -7,6 +7,56 @@ import Announcement from './announcement';
 import './css/header.css';
 import './css/announcement.css';
 
+function Burgur() {
+
+    function addOpen() {
+        var hamburgur = document.getElementById('nav-icon4');
+
+        hamburgur.addEventListener("click", () => {
+                hamburgur.classList.toggle('open');
+                console.log('opned!')
+        });
+    }
+    
+
+
+    return(
+        <div>
+            <label for="toggle">
+                <div id="nav-icon4" onClickCapture={ addOpen } className="">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </label>
+            <input type="checkbox" id="toggle"/>
+            <div id="mobile-menu">
+                <div>
+                    <ul>
+                        <li>
+                            <Link to="/portfolio" >
+                            포트폴리오
+                            </Link>
+                        </li>
+                    <hr />
+                        <li>
+                            <Link to="/discography">
+                            디스코그래피
+                            </Link>
+                        </li>
+                    <hr />
+                        <li>
+                            <Link to="/download">
+                            다운로드
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    );
+}
+
 function Header() {
     return (
         <>

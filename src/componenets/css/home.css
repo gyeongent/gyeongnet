@@ -36,22 +36,14 @@ button {
     appearance:none;
 }
 
-.MainSection {
-    width: 100%;
-    height: 35vw;
-    filter: opacity(80%);
-    background-image: url('../../img/contradict_background.png');
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment:fixed;
-    text-align: center;
-}
-
 .uppertitle {
     width: 100%;
     top: 0;
     position: relative;
+}
+
+.MainSection {
+    height: 40vw;
 }
 
 .maintitle {
@@ -229,4 +221,83 @@ button {
 .rounddesc {
     font-weight: 200;
     padding: 0px 10px;
+}
+
+.roundmodal {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 11;
+    display: none;
+    top:0; left: 0; bottom: 0; right: 0;
+    transition: opacity 0.5s ease;
+    opacity: 0%;
+}
+
+.roundmodalindex {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 240, 240);
+    width: 80%;
+    height: 80%;
+    top: calc(50vh - 45vh);
+    left: calc(50vw - 42vw);
+    border-radius: 50px;
+    padding: 30px;
+    z-index: 12;
+    overflow: scroll;
+    filter: drop-shadow(0 0 0.85rem rgb(110, 110, 110));
+}
+
+.closeBtn {
+    cursor: pointer;
+    width: max-content;
+}
+
+.modalImg {
+    width: 30vw;
+    height: 30vw;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 20px;
+
+}
+
+.modalImg > img {
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .homeBody {
+        width: 100%;
+    }
+
+    .MainSection {
+        height: 90vh;
+    }
+
+    .HomeTop {
+        display: block;
+    }
+
+    .NewsTapContents {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .NewsTap {
+        width: 75%;
+        margin: 14%;
+    }
+
+    .roundbox {
+        width: 100%;
+        margin-bottom: 5vh;
+    }
+
+    .flexcontent {
+        display: block;
+    }
 }

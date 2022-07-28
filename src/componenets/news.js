@@ -20,7 +20,7 @@ function News() {
             </Link>
         )
     })
-    
+
     return(
         <div className='newsFlex'>
             <div className="newsSide">
