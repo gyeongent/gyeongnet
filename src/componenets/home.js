@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Parallax } from 'react-parallax';
 import { Link } from 'react-router-dom';
-import { newsinfo } from '../data/news.json';
+import newsjson from '../data/news.json';
 
 import Soon from '../img/soon.jpg';
 import LSimg from '../img/LifeSaves_1.jpeg';
@@ -102,15 +102,15 @@ function AllNews() {
         <div className="HomeTop">
             <NewsTap
                 tapName="뉴스"
-                linkto={ newsinfo[0].date }
-                newsTitle={ newsinfo[0].title }
-                newsDate={ newsinfo[0].ogdate }
-                linkto2={ newsinfo[1].date }
-                newsTitle2={ newsinfo[1].title }
-                newsDate2={ newsinfo[1].ogdate }
-                linkto3={ newsinfo[2].date }
-                newsTitle3={ newsinfo[2].title }
-                newsDate3={ newsinfo[2].ogdate }
+                linkto={ newsjson.newsinfo[0].date }
+                newsTitle={ newsjson.newsinfo[0].title }
+                newsDate={ newsjson.newsinfo[0].ogdate }
+                linkto2={ newsjson.newsinfo[1].date }
+                newsTitle2={ newsjson.newsinfo[1].title }
+                newsDate2={ newsjson.newsinfo[1].ogdate }
+                linkto3={ newsjson.newsinfo[2].date }
+                newsTitle3={ newsjson.newsinfo[2].title }
+                newsDate3={ newsjson.newsinfo[2].ogdate }
             />
             <NewsTap
                 tapName="일정"

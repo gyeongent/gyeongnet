@@ -1,15 +1,15 @@
 import React from 'react';
 import NewsComponent from './componenets';
-import { newsinfo } from '../../data/news.json';
+import newsjson from '../../data/news.json';
 
 import '../css/news.css';
 
 function NewsThree(){
     return(
         <NewsComponent 
-            newstitle={ newsinfo[1].title }
-            newsdate= { newsinfo[1].ogdate }
-            newsdesc={ newsinfo[1].desc }
+            newstitle={ newsjson.newsinfo[1].title }
+            newsdate= { newsjson.newsinfo[1].ogdate }
+            newsdesc={ newsjson.newsinfo[1].desc }
         />
     );
 }
