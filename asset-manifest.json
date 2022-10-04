@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4c7c492d.css",
-    "main.js": "/static/js/main.04264ce0.js",
+    "main.css": "/static/css/main.16670e08.css",
+    "main.js": "/static/js/main.a59a7bf0.js",
     "static/js/787.03b55ca7.chunk.js": "/static/js/787.03b55ca7.chunk.js",
     "static/media/anxiety_cover.jpg": "/static/media/anxiety_cover.0592e07bb7dfab0479d7.jpg",
     "static/media/honey_moon.png": "/static/media/honey_moon.9e198d58444a070e38fa.png",
@@ -11,12 +11,14 @@
     "static/media/LifeSaves_1.jpeg": "/static/media/LifeSaves_1.e1b9472c5ff9dd71f9ef.jpeg",
     "static/media/logo.svg": "/static/media/logo.be796eb9de8cb1a4c0f90f8e2f92ef77.svg",
     "index.html": "/index.html",
-    "main.4c7c492d.css.map": "/static/css/main.4c7c492d.css.map",
-    "main.04264ce0.js.map": "/static/js/main.04264ce0.js.map",
+    "static/media/menu.svg": "/static/media/menu.b94dedde11b3d28b57816946f065c9d4.svg",
+    "static/media/closeMenu.svg": "/static/media/closeMenu.e51da30d59ae5ece2b25f03cd5ab5e98.svg",
+    "main.16670e08.css.map": "/static/css/main.16670e08.css.map",
+    "main.a59a7bf0.js.map": "/static/js/main.a59a7bf0.js.map",
     "787.03b55ca7.chunk.js.map": "/static/js/787.03b55ca7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c7c492d.css",
-    "static/js/main.04264ce0.js"
+    "static/css/main.16670e08.css",
+    "static/js/main.a59a7bf0.js"
   ]
 }
