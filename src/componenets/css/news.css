@@ -146,6 +146,11 @@
         position: static;
         text-align: center;
         font-size: 20vw;
+        transform: translateY(5vh) translateZ(0px);
+    }
+
+    .newsSide > div {
+        padding-left: 0vh;
     }
 
     .newsDesc {

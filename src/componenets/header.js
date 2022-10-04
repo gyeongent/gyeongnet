@@ -1,16 +1,18 @@
 import React from 'react';
 import {NavLink, Link} from 'react-router-dom';
 import logo from '../logo.svg';
+import menuLogo from '../menu.svg';
+import closeMenu from '../closeMenu.svg';
 
 // import Announcement from './announcement';
 
 import './css/header.css';
 import './css/announcement.css';
 
-function Burgur() {
+function Burger() {
 
     function addOpen() {
-        var hamburgur = document.getElementById('nav-icon4');
+        var hamburgur = document.getElementById('menuLogo');
 
         hamburgur.addEventListener("click", () => {
                 hamburgur.classList.toggle('open');
@@ -21,32 +23,33 @@ function Burgur() {
     return(
         <div>
             <label for="toggle">
-                <div id="nav-icon4" onClickCapture={ addOpen } className="">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div id="menuLogo" onClickCapture={ addOpen } className="">
+                    <img src={menuLogo} alt='Burger Menu' width='30vw'/>
                 </div>
             </label>
             <input type="checkbox" id="toggle"/>
             <div id="mobile-menu">
-                <div>
+                <div className="mmMain">
                     <ul>
                         <li>
-                            <Link to="/portfolio" >
-                            포트폴리오
-                            </Link>
+                            <NavLink to="/portfolio" >
+                                포트폴리오
+                            </NavLink>
                         </li>
-                    <hr />
                         <li>
-                            <Link to="/discography">
-                            디스코그래피
-                            </Link>
+                            <NavLink to="/discography">
+                                디스코그래피
+                            </NavLink>
                         </li>
-                    <hr />
                         <li>
-                            <Link to="/download">
-                            다운로드
-                            </Link>
+                            <NavLink to="/download">
+                                다운로드
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/support">
+                                지원
+                            </NavLink>
                         </li>
                     </ul>
                 </div>
@@ -96,6 +99,9 @@ function Header() {
                             </div>
                         </li>
                     </ul>
+                </div>
+                <div>
+                    <Burger />
                 </div>
             </div>
         </>

@@ -120,3 +120,24 @@
     height: 10px;
     margin-right: 3px;
 }
+
+@media only screen and (max-width: 768px) {
+
+    .supportAll {
+        display: block;
+        margin-top: 5vh;
+    }
+
+    .statusTotal {
+        width: 100%;
+    }
+
+    .issueBox {
+        margin-top: 5vh;
+        padding: 0;
+    }
+
+    .issueContent {
+        padding: 20px;
+    }
+}
