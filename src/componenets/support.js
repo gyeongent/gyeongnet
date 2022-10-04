@@ -45,45 +45,17 @@ function Issue(){
                     <hr className="issueHr" />
                     <div className="statusList">
                         <div className="statusListChild">
-                            <div className="stGreen"/> <div className="childName">원활</div>
+                            <div className="stGreen Mini"/> <div className="childName">원활</div>
                         </div>
                         <div className="statusListChild">
-                            <div className="stOrange"/> <div className="childName">점검중</div>
+                            <div className="stOrange Mini"/> <div className="childName">점검중</div>
                         </div>
                         <div className="statusListChild">
-                            <div className="stRed"/> <div className="childName">접속불가</div>
+                            <div className="stRed Mini"/> <div className="childName">접속불가</div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    );
-}
-
-function IssueSearch(){
-    return(
-        <div>
-            <ReactSearchBox
-                placeholder="test"
-                data={[
-                    {
-                        key: "test",
-                        value: "test"
-                    },
-                    {
-                        key: "test2",
-                        value: "test2"
-                    },
-                ]}
-                onSelect={(record: any) => console.log(record)}
-                onFocus={() => {
-                    console.log("This function is called when is focussed");
-                }}
-                onChange={(value) => console.log(value)}
-                autoFocus
-                leftIcon={<>🎨</>}
-                iconBoxSize="48px"
-            />
         </div>
     );
 }

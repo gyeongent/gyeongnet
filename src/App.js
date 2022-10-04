@@ -1,5 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 import Portfolio from './componenets/portfolio';
 import Header from './componenets/header';
@@ -22,7 +23,6 @@ function App() {
     <div>
       <Header />
           <div className="App">
-          
             <Routes>
               <Route exact path="/" element={<Home />}></Route>
               <Route path="/portfolio" element={<Portfolio />}></Route>

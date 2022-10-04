@@ -17,6 +17,7 @@
     "react-search-box": "^2.3.0",
     "react-smooth-scrolling": "^1.0.2",
     "react-spring": "^9.5.2",
+    "react-transition-group": "^4.4.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

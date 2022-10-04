@@ -111,4 +111,12 @@
 
 .childName {
     margin-top: -5px;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.Mini {
+    width: 10px;
+    height: 10px;
+    margin-right: 3px;
 }
