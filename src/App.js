@@ -8,6 +8,7 @@ import Footer from './componenets/footer';
 import NotFound from './componenets/404';
 import News from './componenets/news';
 import Discography from "./componenets/discography";
+import Support from "./componenets/support";
 
 import NewsOne from './componenets/news/220314';
 import NewsTwo from './componenets/news/220405';
@@ -26,6 +27,7 @@ function App() {
               <Route exact path="/" element={<Home />}></Route>
               <Route path="/portfolio" element={<Portfolio />}></Route>
               <Route path="/discography" element={<Discography />}></Route>
+              <Route path="/support" element={<Support />}></Route>
               <Route path="/news" element={ <News /> }></Route>
               <Route path='/news/220728' element={ <NewsFour/> }></Route>
               <Route path='/news/220629' element={ <NewsThree/> }></Route>
@@ -33,12 +35,8 @@ function App() {
               <Route path='/news/220314' element={ <NewsOne />}></Route>
               <Route path="*" element={<NotFound />}></Route>
             </Routes>
-            
           </div>
           <Footer />
-          
-        
-        
     </div>
   );
 }
