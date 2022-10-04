@@ -126,7 +126,12 @@ button {
     margin-top: 17px;
 }
 
+.NewsContents_Box {
+    width: 100%;
+}
+
 .NewsContents {
+    width: auto;
     padding-top: 25px;
     padding-bottom: 25px;
     padding-right: 100px;
@@ -139,6 +144,9 @@ button {
     transition: all 0.2s ease-in-out;
     display: block;
     clear:both;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .New_icon {
@@ -265,24 +273,6 @@ button {
 
 .modalImg > img {
     width: 100%;
-}
-
-.fade-appear,
-.fade-enter {
-opacity: 0;
-z-index: 1;
-}
-.fade-appear-active,
-.fade-enter.fade-enter-active {
-opacity: 1;
-transition: opacity 450ms linear 250ms;
-}
-.fade-exit {
-opacity: 1;
-}
-.fade-exit.fade-exit-active {
-opacity: 0;
-transition: opacity 150ms linear;
 }
 
 
