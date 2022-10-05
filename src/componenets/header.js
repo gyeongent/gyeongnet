@@ -1,8 +1,7 @@
-import React from 'react';
-import {NavLink, Link} from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { NavLink, Link, useLocation } from 'react-router-dom';
 import logo from '../logo.svg';
 import menuLogo from '../menu.svg';
-import closeMenu from '../closeMenu.svg';
 
 // import Announcement from './announcement';
 
@@ -19,6 +18,17 @@ function Burger() {
                 console.log('opned!')
         });
     }
+
+    function PageReload(){
+        let currentPath = ""
+        let location = useLocation();
+
+        useEffect(() => {
+        if(currentPath === location.pathname) window.location.reload();
+
+        currentPath = location.pathname;
+        }, [location])
+    }
     
     return(
         <div>
@@ -32,22 +42,22 @@ function Burger() {
                 <div className="mmMain">
                     <ul>
                         <li>
-                            <NavLink to="/portfolio" >
+                            <NavLink to="/portfolio" onClick={PageReload}>
                                 포트폴리오
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/discography">
+                            <NavLink to="/discography" onClick={PageReload}>
                                 디스코그래피
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/download">
+                            <NavLink to="/download" onClick={PageReload}>
                                 다운로드
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/support">
+                            <NavLink to="/support" onClick={PageReload}>
                                 지원
                             </NavLink>
                         </li>

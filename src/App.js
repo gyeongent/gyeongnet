@@ -1,6 +1,5 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 import Portfolio from './componenets/portfolio';
 import Header from './componenets/header';
@@ -10,6 +9,7 @@ import NotFound from './componenets/404';
 import News from './componenets/news';
 import Discography from "./componenets/discography";
 import Support from "./componenets/support";
+import Register from './componenets/register';
 
 import NewsOne from './componenets/news/220314';
 import NewsTwo from './componenets/news/220405';
@@ -28,6 +28,7 @@ function App() {
               <Route path="/portfolio" element={<Portfolio />}></Route>
               <Route path="/discography" element={<Discography />}></Route>
               <Route path="/support" element={<Support />}></Route>
+              <Route path="/signup" element={<Register />}></Route>
               <Route path="/news" element={ <News /> }></Route>
               <Route path='/news/220728' element={ <NewsFour/> }></Route>
               <Route path='/news/220629' element={ <NewsThree/> }></Route>
