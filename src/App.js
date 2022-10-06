@@ -9,6 +9,7 @@ import NotFound from './componenets/404';
 import News from './componenets/news';
 import Discography from "./componenets/discography";
 import Support from "./componenets/support";
+import DownloadPage from './componenets/download';
 import Register from './componenets/register';
 
 import NewsOne from './componenets/news/220314';
@@ -28,12 +29,14 @@ function App() {
               <Route path="/portfolio" element={<Portfolio />}></Route>
               <Route path="/discography" element={<Discography />}></Route>
               <Route path="/support" element={<Support />}></Route>
+              <Route path="/download" element={<DownloadPage />}></Route>
               <Route path="/signup" element={<Register />}></Route>
               <Route path="/news" element={ <News /> }></Route>
               <Route path='/news/220728' element={ <NewsFour/> }></Route>
               <Route path='/news/220629' element={ <NewsThree/> }></Route>
               <Route path='/news/220405' element={ <NewsTwo/> }></Route>
               <Route path='/news/220314' element={ <NewsOne />}></Route>
+              {/* <Route path='/download/launchpad' element={<LaunchpadPj />}></Route> */}
               <Route path="*" element={<NotFound />}></Route>
             </Routes>
           </div>

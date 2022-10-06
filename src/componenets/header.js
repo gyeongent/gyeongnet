@@ -109,9 +109,9 @@ function Header() {
                             </div>
                         </li>
                     </ul>
-                </div>
-                <div>
-                    <Burger />
+                    <div className="burgerMenu">
+                        <Burger />
+                    </div>
                 </div>
             </div>
         </>
