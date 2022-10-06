@@ -73,7 +73,7 @@ function DetailSection(){
     document.addEventListener('scroll', function(){
         var st = document.getElementsByClassName('SideTitle')[0]
 
-        if(window.scrollY > 700){
+        if(window.scrollY > 700 && document.body.clientWidth >= 768){
             st.classList.add('fixed');
         } else {
             st.classList.remove('fixed');
@@ -82,6 +82,9 @@ function DetailSection(){
 
     return(
         <div className="DSBox">
+            <div className="SideTitle">
+                ARCHIVE
+            </div>
             <div>
                 <div className='DSBTitle'>
                     게임
@@ -107,9 +110,6 @@ function DetailSection(){
                 <DetailContent DtImg={SoonImg} DtTitle="우원재 - 시차 리메이크" DtDesc={"2018년 1월 7일 업로드 | 배포하지 않음\nLINE SWITCH 콜라보 프로젝트"}/>
                 <DetailContent DtImg={SoonImg} DtTitle="DEAMN - Rendezvous" DtDesc={"2018년 1월 30일 업로드 | 난이도 : ★★★☆☆\n"}/>
                 <DetailContent DtImg={SoonImg} DtTitle="아이유 - 분홍신" DtDesc={"2018년 12월 26일 업로드 | 난이도 : ★★★☆☆\n2018년 크리스마스 기념 프로젝트"}/>
-            </div>
-            <div className="SideTitle">
-                ARCHIVE
             </div>
         </div>
     );

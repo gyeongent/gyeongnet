@@ -25,7 +25,7 @@ function Status(){
             <div className="statusTotal">
                 <StatusArticle stCircle="stGreen" stContent="홈페이지 상태" />
                 <StatusArticle stCircle="stGreen" stContent="메일 서비스" />
-                <StatusArticle stCircle="stOrange" stContent="다운로드 서비스" />
+                <StatusArticle stCircle="stGreen" stContent="다운로드 서비스" />
             </div>
         </div>
     );
@@ -39,7 +39,7 @@ function Issue(){
             </div>
             <div className="issueContent">
                 <div className="issueArticle">
-                    현재 다운로드 서비스에 오류가 발생했거나 기능 추가중입니다. 곧 해결될 예정이니 기다려주시면 감사하겠습니다.
+                    발견된 문제가 없습니다 :)
                 </div>
                 <div className="issueBar">
                     <hr className="issueHr" />
