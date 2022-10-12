@@ -236,4 +236,13 @@
     .supportInput {
         width: 95%;
     }
+
+    .splitHr {
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+
+    .otherQues {
+        margin-bottom: 15vh;
+    }
 }
