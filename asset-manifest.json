@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6b23dc4e.css",
-    "main.js": "/static/js/main.e9b450c2.js",
+    "main.css": "/static/css/main.c52413ad.css",
+    "main.js": "/static/js/main.d41348b0.js",
     "static/js/787.03b55ca7.chunk.js": "/static/js/787.03b55ca7.chunk.js",
     "static/media/anxiety_cover.jpg": "/static/media/anxiety_cover.0592e07bb7dfab0479d7.jpg",
     "static/media/honey_moon.png": "/static/media/honey_moon.9e198d58444a070e38fa.png",
@@ -17,12 +17,12 @@
     "static/media/logo.svg": "/static/media/logo.be796eb9de8cb1a4c0f90f8e2f92ef77.svg",
     "index.html": "/index.html",
     "static/media/menu.svg": "/static/media/menu.b94dedde11b3d28b57816946f065c9d4.svg",
-    "main.6b23dc4e.css.map": "/static/css/main.6b23dc4e.css.map",
-    "main.e9b450c2.js.map": "/static/js/main.e9b450c2.js.map",
+    "main.c52413ad.css.map": "/static/css/main.c52413ad.css.map",
+    "main.d41348b0.js.map": "/static/js/main.d41348b0.js.map",
     "787.03b55ca7.chunk.js.map": "/static/js/787.03b55ca7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b23dc4e.css",
-    "static/js/main.e9b450c2.js"
+    "static/css/main.c52413ad.css",
+    "static/js/main.d41348b0.js"
   ]
 }
