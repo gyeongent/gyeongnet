@@ -62,15 +62,17 @@ function Issue(){
 
 function Problem(){
 
-    function showContent(){
+    function showContent(event){
         var cktitle = document.querySelectorAll(".quesTitle")
         var ckdesc = document.querySelectorAll(".quesDesc")
+
+        event.preventDefault();
 
         for (let i = 0; i < cktitle.length; i++){
             cktitle[i].addEventListener('click', () => {
                 ckdesc[i].classList.toggle('quesOpen')
             });
-        }
+        }  
     }
 
     const quesList = quesArray.quesinfo.map((quesinfo, index) => {
