@@ -25,7 +25,7 @@ function Aurora(){
                         <Tracks 
                             trackNum = "1"
                             trackName = "오로라(Aurora)"
-                            trackLength = "-"
+                            trackLength = "1:10"
                         />
                     }
                     copyright={discoInfo[1].copyright}
