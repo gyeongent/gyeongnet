@@ -12,85 +12,52 @@ function DiscoNavi(){
         const digiNav = document.getElementById("digitalNav");
         const showAll = document.getElementById("showAllNav");
         const albumNav = document.getElementById("albumNav");
+        const cdNav = document.getElementById("cdNav");
 
         const showAllContent = () => {
             const album = document.getElementById("album");
             const digital = document.getElementById("digital");
+            const cd = document.getElementById("cd");
 
             album.style.display = "block";
             digital.style.display = "block";
+            cd.style.display = "block";
         }
-
-        // const showAllContent = () => {
-        //     const album = document.querySelectorAll("#album");
-        //     const digital = document.querySelectorAll("#digital");
-
-        //     for (let i = 0; i < album.length; i++){
-        //         showAll.addEventListener('click', () => {
-        //             album[i].style.display = "block";
-        //         })
-        //     }
-
-        //     for (let i = 0; i < digital.length; i++){
-        //         showAll.addEventListener('click', () => {
-        //             digital[i].style.display = "block";
-        //         })
-        //     }
-        // }
-
-        // const removeAlbum = () => {
-        //     const album = document.querySelectorAll("#album");
-        //     const digital = document.querySelectorAll("#digital");
-
-        //     for (let i = 0; i < album.length; i++){
-        //         digiNav.addEventListener('click', () => {
-        //             album[i].style.display = "none";
-        //         })
-        //     }
-
-        //     for (let i = 0; i < digital.length; i++){
-        //         digiNav.addEventListener('click', () => {
-        //             digital[i].style.display = "block";
-        //         })
-        //     }
-        // }
-
-        // const removeDigital = () => {
-        //     const album = document.querySelectorAll("#album");
-        //     const digital = document.querySelectorAll("#digital");
-
-        //     for (let i = 0; i < album.length; i++){
-        //         albumNav.addEventListener('click', () => {
-        //             album[i].style.display = "block";
-        //         })
-        //     }
-
-        //     for (let i = 0; i < digital.length; i++){
-        //         digital[i].addEventListener('click', () => {
-        //             digital[i].style.display = "none";
-        //         })
-        //     }
-        // }
 
         const removeDigital = () => {
             const album = document.getElementById("album");
             const digital = document.getElementById("digital");
+            const cd = document.getElementById("cd");
 
             album.style.display = "block";
             digital.style.display = "none";
+            cd.style.display = "none";
         }
 
         const removeAlbum = () => {
             const album = document.getElementById("album");
             const digital = document.getElementById("digital");
+            const cd = document.getElementById("cd");
 
             album.style.display = "none";
             digital.style.display = "block";
+            cd.style.display = "none";
+        }
+
+        const showCd = () => {
+            const album = document.getElementById("album");
+            const digital = document.getElementById("digital");
+            const cd = document.getElementById("cd");
+
+            album.style.display = "none";
+            digital.style.display = "none";
+            cd.style.display = "block";
         }
 
         showAll.addEventListener("click", showAllContent);
         digiNav.addEventListener("click", removeAlbum);
         albumNav.addEventListener("click", removeDigital);
+        cdNav.addEventListener("click", showCd)
 
 
     }
@@ -103,6 +70,9 @@ function DiscoNavi(){
                 </li>
                 <li id="digitalNav">
                     디지털
+                </li>
+                <li id="cdNav">
+                    CD
                 </li>
                 <li id="albumNav">
                     앨범
@@ -119,7 +89,7 @@ function Discography(){
             <Link to={'/discography/' + discoinfo.url} key={index}>
                 <div className="discoBox" id={ discoinfo.class }>
                     <div className="discoImg">
-                        <img src={ `data:image/jpg;base64,` + `${discoinfo.base64}` } alt="jacket"/>
+                        <img src={ discoinfo.img } alt="discoImg"/>
                     </div>
                     <div className="discoInfo">
                         <div className="discoDesc">
@@ -133,7 +103,7 @@ function Discography(){
                             </div>
                         </div>
                         <div className="discoTitle">
-                            { discoinfo.name }
+                            <b>{ discoinfo.name }</b>
                         </div>
                     </div>
                 </div>

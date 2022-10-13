@@ -2,8 +2,6 @@ import React from 'react';
 import discoArray from "../../data/discography.json";
 import DiscoBase, { Tracks } from "./discoBase";
 
-import auroraCover from "../../img/album/aurora_cover.jpg";
-
 import '../css/news.css';
 import '../css/discography.css';
 
@@ -20,7 +18,7 @@ function Aurora(){
             </div>
             <div className='newsContent'>
                 <DiscoBase
-                    bigImg={auroraCover}
+                    bigImg={discoInfo[1].img}
                     dscTitle={discoInfo[1].name}
                     relDate={discoInfo[1].release}
                     tracks={

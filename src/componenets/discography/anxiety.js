@@ -2,8 +2,6 @@ import React from 'react';
 import discoArray from "../../data/discography.json";
 import DiscoBase, { Tracks } from "./discoBase";
 
-import anxiteyCover from "../../img/album/anxiety_cover.jpg";
-
 import '../css/news.css';
 import '../css/discography.css';
 
@@ -20,7 +18,7 @@ function Anxiety(){
             </div>
             <div className='newsContent'>
                 <DiscoBase
-                    bigImg={anxiteyCover}
+                    bigImg={discoInfo[2].img}
                     dscTitle={discoInfo[2].name}
                     relDate={discoInfo[2].release}
                     tracks={
