@@ -34,7 +34,7 @@ hr {
     display: block;
 }
 
-.newsContent {
+.newsdiscoContent {
     display: flex;
     height: auto;
     flex-wrap: nowrap;
@@ -156,7 +156,7 @@ hr {
     .newsFlex {
         width: 100%;
     }
-    .newsContent {
+    .newsdiscoContent {
         display: block;
         width: 100%;
         padding: 10vw;

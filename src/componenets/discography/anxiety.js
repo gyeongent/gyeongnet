@@ -16,7 +16,7 @@ function Anxiety(){
                     Discography
                 </div>
             </div>
-            <div className='newsContent'>
+            <div className='newsdiscoContent'>
                 <DiscoBase
                     bigImg={discoInfo[2].img}
                     dscTitle={discoInfo[2].name}

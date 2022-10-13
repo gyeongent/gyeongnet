@@ -111,6 +111,8 @@ function Discography(){
         )
     })
 
+
+
     return(
         <>
         <div className="discoNaviAll">
@@ -122,7 +124,7 @@ function Discography(){
                     Discography
                 </div>
             </div>
-            <div className='newsContent'>
+            <div className='newsdiscoContent'>
                 { discoList }
             </div>
         </div>

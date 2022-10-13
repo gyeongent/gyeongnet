@@ -16,7 +16,7 @@ function Aurora(){
                     Discography
                 </div>
             </div>
-            <div className='newsContent'>
+            <div className='newsdiscoContent'>
                 <DiscoBase
                     bigImg={discoInfo[1].img}
                     dscTitle={discoInfo[1].name}
