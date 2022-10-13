@@ -58,7 +58,7 @@
     font-size: 13px;
     margin-top: 6px;
     color: grey;
-    font-weight: 200;
+    font-weight: 400;
 }
 
 .Newsday {
@@ -90,7 +90,7 @@
     border-bottom: 1px solid rgb(218, 218, 218);
     background-color: white;
     letter-spacing: -0.5px;
-    font-weight: 300;
+    font-weight: 400;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     display: block;

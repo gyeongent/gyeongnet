@@ -52,7 +52,7 @@ function Newslist(props) {
                 <div className="NewsContents_Box">
                     <div className='NewsContents'>
                         { props.hntitle }
-                        <div className='NewsContentsInfo'>
+                        <div className='NewsContentsInfo' id={props.dateId}>
                             <p className="NewsDate">{ props.hndate }</p>
                         </div>
                     </div>
@@ -72,6 +72,7 @@ function NewsTap(props) {
                     link= { props.linkto }
                     hntitle= { props.newsTitle }
                     hndate= { props.newsDate }
+                    dateId = { props.dateId1 }
                 />
                 <Newslist
                     link= { props.linkto2 }
@@ -90,7 +91,7 @@ function NewsTap(props) {
 function AllNews() {
 
     let [setTitle] = useState([
-        '-',
+        'Aurora(오로라) 싱글 발매',
         '-',
         '-',
         '-',
@@ -114,8 +115,9 @@ function AllNews() {
             />
             <NewsTap
                 tapName="일정"
+                dateId1="singleDate"
                 newsTitle={ setTitle[0] }
-                newsDate="-"
+                newsDate="2022-10-23"
                 newsTitle2={ setTitle[1] }
                 newsDate2="-"
                 newsTitle3={ setTitle[2] }
