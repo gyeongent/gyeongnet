@@ -30,31 +30,43 @@ function BannerSection(){
     const parent = { width: `100%`, height: `100%`, paddingTop: `110px` }
     const child = { marginLeft: `50px` }
 
-    const prepare = () => {
-        alert("준비중입니다.");
-    }
-
     return(
         <div className="bannerArea">
             <div className="bannerTitle">
                 어떤 종류를 찾고 계신가요?
             </div>
-            <div style={parent}>
+            <div style={parent} className="pcScroll">
                 <HorizontalScroll>
-                    <div style={child} onClick={prepare}>
+                    <div style={child} onClick={() => {alert("준비중입니다.")}}>
                         <Banner class="bannerImg lightpink" bnImg={GameCtrlIcon} bnTxt="게임"/>
                     </div>
-                    <div style={child} onClick={prepare}>
+                    <div style={child}>
                         <Banner class="bannerImg skyblue" bnImg={Font} bnTxt="폰트"/>
                     </div>
-                    <div style={child} onClick={prepare}>
+                    <div style={child}>
                         <Banner class="bannerImg lightpink" bnImg={Launchpad} bnTxt="런치패드 프로젝트"/>
                     </div>
-                    <div style={child} onClick={prepare}>
+                    <div style={child}>
                         <Banner class="bannerImg skyblue" bnImg={Other} bnTxt="기타"/>
                     </div>
                 </HorizontalScroll>
             </div>
+            <ul className="list">
+                <li onClick={() => {alert("준비중입니다.")}}>
+                    <Banner class="bannerImg lightpink" bnImg={GameCtrlIcon} bnTxt="게임"/>
+                </li>
+                <li onClick={() => {alert("준비중입니다.")}}>
+                    <Banner class="bannerImg skyblue" bnImg={Font} bnTxt="폰트"/>
+                </li>
+                <li>
+                    <Link to="/download/launchpad">
+                        <Banner class="bannerImg lightpink" bnImg={Launchpad} bnTxt="런치패드 프로젝트"/>
+                    </Link>
+                </li>
+                <li onClick={() => {alert("준비중입니다.")}}>
+                    <Banner class="bannerImg skyblue" bnImg={Other} bnTxt="기타"/>
+                </li>
+            </ul>
         </div>
     );
 }
