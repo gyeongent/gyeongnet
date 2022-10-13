@@ -19,6 +19,7 @@ import NewsFour from './componenets/news/220728';
 
 import Anxiety from './componenets/discography/anxiety';
 import Aurora from "./componenets/discography/aurora";
+import Mellow from './componenets/discography/mellow';
 
 import './App.css';
 
@@ -33,6 +34,7 @@ function App() {
               <Route path="/discography" element={<Discography />}></Route>
               <Route path='/discography/anxiety' element={ <Anxiety />}></Route>
               <Route path='/discography/aurora' element={ <Aurora />}></Route>
+              <Route path='/discography/mellow' element={ <Mellow />}></Route>
               <Route path="/support" element={<Support />}></Route>
               <Route path="/download" element={<DownloadPage />}></Route>
               <Route path="/signup" element={<Register />}></Route>
