@@ -130,12 +130,12 @@
 .DetailHr {
     margin-top: 50px;
     margin-bottom: 50px;
+    width: auto;
 }
 
 .SideTitle {
-    font-size: 130px;
+    font-size: 6.5vw;
     position: absolute;
-    height: 100%;
     right: 150px;
     top: 800px;
 }

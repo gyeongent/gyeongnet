@@ -8,16 +8,16 @@
 .newsSide {
     width: auto;
     writing-mode: vertical-rl;
-    font-size: 13vh;
+    font-size: 11vh;
     font-weight: 100;
     height: max-content;
-    left: 0;
-    top: 0;
-    position: fixed;
+    top: 200px;
+    left: 20px;
+    position: absolute;
     background-color: white;
     z-index: -1;
     word-wrap: normal;
-    transform: translateY(20vh) translateZ(0px);
+    letter-spacing: -5px;
 }
 
 .newsSide > div {
@@ -25,7 +25,7 @@
 }
 
 .newsContent {
-    width: 100%;
+    width: 40vw;
     height: 100vh;
     padding: 350px;
 }
@@ -44,7 +44,7 @@
 }
 
 .newsDesc {
-    width: 50%;
+    width: 100%;
     font-size: 17px;
     line-height: 30px;
     font-weight: 200;
@@ -125,6 +125,34 @@
 .NewsContents:hover {
     background-color: rgb(240, 240, 240);
     transition: all 0.2s ease-in-out;
+}
+
+.sideFixed {
+    top: 100px;
+    position: fixed;
+}
+
+.b2l {
+    padding-top: 80px;
+    padding-right: 130px;
+    position: absolute;
+    font-size: 70px;
+    letter-spacing: -1px;
+    line-height: 70px;
+    right: 0;
+}
+
+.rightFixed {
+    top: 0px;
+    position: fixed;
+}
+
+.rightNav {
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 200;
+    line-height: 1;
 }
 
 @media only screen and (max-width: 820px) {

@@ -111,6 +111,16 @@ function Discography(){
         )
     })
 
+    document.addEventListener('scroll', function(){
+        var st = document.getElementsByClassName('newsSide')[0]
+
+        if(window.scrollY > 100 && document.body.clientWidth >= 768){
+            st.classList.add('sideFixed');
+        } else {
+            st.classList.remove('sideFixed');
+        }
+    })
+
 
 
     return(

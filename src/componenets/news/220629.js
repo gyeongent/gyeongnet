@@ -10,6 +10,8 @@ function NewsThree(){
             newstitle={ newsjson.newsinfo[1].title }
             newsdate= { newsjson.newsinfo[1].ogdate }
             newsdesc={ newsjson.newsinfo[1].desc }
+            pushBack="220405"
+            pushNext="220728"
         />
     );
 }
