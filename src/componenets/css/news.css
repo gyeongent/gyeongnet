@@ -184,4 +184,8 @@
     .newsDesc {
         width: 100%;
     }
+
+    .rightNav {
+        display: none;
+    }
 }
