@@ -30,20 +30,28 @@ function NewsComponent(props){
                     { props.newsdate }
                 </div>
                 <hr />
+                <div className='newsImg'>
+                    <img src={props.imgSrc} alt="newsImg" className={props.imgClass}/>
+                </div>
                 <div className='newsDesc'>
                     { props.newsdesc }
                 </div>
             </div>
             <div className="b2l">
-                <Link to="/news">
-                    <div>
-                        &lt;
-                    </div>
-                    <div>
-                        BACK<br/>TO<br/>LIST
-                    </div>
-                </Link>
-                <hr />
+                <div>
+                    <Link to="/news">
+                        <div>
+                            &lt;
+                        </div>
+                        <div className="pc_b2l">
+                            BACK<br/>TO<br/>LIST
+                        </div>
+                        <div className='m_b2l'>
+                            BACK TO LIST
+                        </div>
+                    </Link>
+                </div>
+                <hr className="b2l_hr"/>
                 <div className='rightNav'>
                     <div>
                         <Link to={'/news/' + props.pushBack}>

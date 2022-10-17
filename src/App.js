@@ -16,6 +16,7 @@ import NewsOne from './componenets/news/220314';
 import NewsTwo from './componenets/news/220405';
 import NewsThree from './componenets/news/220629';
 import NewsFour from './componenets/news/220728';
+import NewsFive from './componenets/news/221017';
 
 import Anxiety from './componenets/discography/anxiety';
 import Aurora from "./componenets/discography/aurora";
@@ -24,6 +25,7 @@ import Mellow from './componenets/discography/mellow';
 import './App.css';
 
 function App() {
+
   return (
     <div>
       <Header />
@@ -39,6 +41,7 @@ function App() {
               <Route path="/download" element={<DownloadPage />}></Route>
               <Route path="/signup" element={<Register />}></Route>
               <Route path="/news" element={ <News /> }></Route>
+              <Route path="/news/221017" element={ <NewsFive /> }></Route>
               <Route path='/news/220728' element={ <NewsFour/> }></Route>
               <Route path='/news/220629' element={ <NewsThree/> }></Route>
               <Route path='/news/220405' element={ <NewsTwo/> }></Route>

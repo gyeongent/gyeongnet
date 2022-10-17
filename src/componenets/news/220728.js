@@ -7,11 +7,12 @@ import '../css/news.css';
 function NewsFour(){
     return(
         <NewsComponent 
-            newstitle={ newsjson.newsinfo[0].title }
-            newsdate= { newsjson.newsinfo[0].ogdate }
-            newsdesc={ newsjson.newsinfo[0].desc }
+            newstitle={ newsjson.newsinfo[1].title }
+            newsdate= { newsjson.newsinfo[1].ogdate }
+            newsdesc={ newsjson.newsinfo[1].desc }
+            imgClass="none"
             pushBack="220629"
-            pushNext=""
+            pushNext="221017"
         />
     );
 }

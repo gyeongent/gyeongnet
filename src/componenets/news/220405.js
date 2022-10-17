@@ -7,9 +7,10 @@ import '../css/news.css';
 function NewsTwo(){
     return(
         <NewsComponent 
-            newstitle={ newsjson.newsinfo[2].title }
-            newsdate={ newsjson.newsinfo[2].ogdate }
-            newsdesc={ newsjson.newsinfo[2].desc }
+            newstitle={ newsjson.newsinfo[3].title }
+            newsdate={ newsjson.newsinfo[3].ogdate }
+            newsdesc={ newsjson.newsinfo[3].desc }
+            imgClass="none"
             pushBack="220314"
             pushNext="220629"
         />
