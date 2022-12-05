@@ -23,6 +23,8 @@ import Aurora from "./componenets/discography/aurora";
 import Mellow from './componenets/discography/mellow';
 
 import './App.css';
+import ToonsPage from './componenets/toons';
+import Zone from './componenets/toons/zone';
 
 function App() {
 
@@ -47,6 +49,8 @@ function App() {
               <Route path='/news/220405' element={ <NewsTwo/> }></Route>
               <Route path='/news/220314' element={ <NewsOne />}></Route>
               {/* <Route path='/download/launchpad' element={<LaunchpadPj />}></Route> */}
+              <Route path='/toons' element={ <ToonsPage />}></Route>
+              <Route path='/toons/zone' element={ <Zone />}></Route>
               <Route path="*" element={<NotFound />}></Route>
             </Routes>
           </div>

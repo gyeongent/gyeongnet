@@ -1,0 +1,26 @@
+{
+    "tooninfo": [
+        {
+            "title": "스카이 하는 만화",
+            "date": "0",
+            "desc": "0"
+        },
+        {
+            "url": "zone",
+            "title": "금단의구역",
+            "date": "2022/11/28",
+            "desc": "-",
+            "thumb": "https://i.ibb.co/BKJCNww/1.jpg"
+        }
+    ],
+    "toonZoneImg": [
+        "https://i.ibb.co/BKJCNww/1.jpg",
+        "https://i.ibb.co/H4GJqVd/2.jpg",
+        "https://i.ibb.co/cJ2nDMj/3.jpg",
+        "https://i.ibb.co/s31y4rP/4.jpg",
+        "https://i.ibb.co/GkhvH0Z/5.jpg",
+        "https://i.ibb.co/9WMQXdq/6.jpg",
+        "https://i.ibb.co/B2nKvCb/7.jpg"
+        
+    ]
+}

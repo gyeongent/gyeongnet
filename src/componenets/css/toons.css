@@ -1,0 +1,54 @@
+.toons_list {
+    padding: 10vw;
+}
+
+.toons_box {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.toons_thumb {
+    width: 20vw;
+    height: 20vw;
+    overflow: hidden;
+    margin-right: 30px;
+}
+
+.toons_thumb > img {
+    width: 100%;
+    display: block;
+}
+
+.toons_info {
+    font-weight: 400;
+    font-size: calc(2vmin + 5px);
+    letter-spacing: -1px;
+}
+
+.date {
+    font-size: 12px;
+}
+
+.toons_info > div {
+    font-weight: 300;
+    word-break: keep-all;
+
+}
+
+.toons_view {
+    display: block;
+    margin: auto;
+    width: 40vw;
+    height: 40vw;
+    margin-bottom: 100px;
+}
+
+.toons_view > img {
+    width: 100%;
+}
+
+.toon_all {
+    margin-top: 100px;
+    margin-bottom: 500px;
+}
