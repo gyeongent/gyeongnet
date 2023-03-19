@@ -39,7 +39,8 @@ button {
 .uppertitle {
     top: 0;
     position: relative;
-    margin: 15px 0;
+    width: auto;
+    margin: 0 2em;
 }
 
 .MainSection {
@@ -80,7 +81,7 @@ button {
 }
 
 .HNewsTap {
-    margin: 1em;
+    margin: 0 1em;
     width: 350px;
     height: 350px;
     border-radius: 30px;
@@ -105,7 +106,7 @@ button {
 }
 
 .HNewHome {
-    width: 810px;
+    width: 50em;
     height: 350px;
     border-radius: 30px;
     display: flex;
@@ -121,8 +122,8 @@ button {
     display: flex;
     justify-content: center;
     height: max-content;
-    width: 100%;
-    margin: 10px 0 50px 0;
+    width: auto;
+    margin: 30px 2em;
 }
 
 .HNewsTapContents {
@@ -303,6 +304,12 @@ button {
     width: 100%;
 }
 
+@media only screen and (max-width: 820px) {
+    .HNewHome {
+        width: auto;
+    }
+}
+
 
 @media only screen and (max-width: 768px) {
 
@@ -312,6 +319,22 @@ button {
 
     .MainSection {
         height: 90vh;
+    }
+
+    .HNewHome {
+        width: auto;
+        margin: 2em;
+    }
+
+    .HNewsTap {
+        width: auto;
+        margin: 2em;
+    }
+
+    .NewMainTitle {
+        font-size: 50px;
+        width: 300px;
+        text-align: center;
     }
 
     .HomeTop {

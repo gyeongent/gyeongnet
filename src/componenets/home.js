@@ -1,23 +1,23 @@
 import React, { useState } from 'react';
-import { Parallax } from 'react-parallax';
+// import { Parallax } from 'react-parallax';
 import { Link } from 'react-router-dom';
 import newsjson from '../data/news.json';
 
 import './css/home.css';
 
-const Container = () => (
-    <Parallax
-        blur={{ min: -13, max: 15}}
-        bgImage={require('../img/contradict_background.png')}
-        bgImageAlt="Main Title image"
-        strength={-200}
-    >
-        <div className="maintitle">
-            GYEONG Studio에 오신 것을 환영합니다.
-        </div>
-        <div className="MainSection"/>
-    </Parallax>
-);
+// const Container = () => (
+//     <Parallax
+//         blur={{ min: -13, max: 15}}
+//         bgImage={require('../img/contradict_background.png')}
+//         bgImageAlt="Main Title image"
+//         strength={-200}
+//     >
+//         <div className="maintitle">
+//             GYEONG Studio에 오신 것을 환영합니다.
+//         </div>
+//         <div className="MainSection"/>
+//     </Parallax>
+// );
 
 const NewHome = () => {
     return(
@@ -111,6 +111,7 @@ function AllNews() {
 
 
 function Home() {
+
     return (
       <div className="homeBody">
         <HomeScreen />
