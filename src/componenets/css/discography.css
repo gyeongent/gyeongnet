@@ -32,6 +32,9 @@ hr {
     width: 100%;
     object-fit: cover;
     display: block;
+    background-image: url("../../img/soon.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 .newsdiscoContent {

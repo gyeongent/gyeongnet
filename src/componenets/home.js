@@ -3,9 +3,6 @@ import { Parallax } from 'react-parallax';
 import { Link } from 'react-router-dom';
 import newsjson from '../data/news.json';
 
-import Soon from '../img/soon.jpg';
-import LSimg from '../img/LifeSaves_1.jpeg';
-
 import './css/home.css';
 
 const Container = () => (
@@ -22,25 +19,30 @@ const Container = () => (
     </Parallax>
 );
 
+const NewHome = () => {
+    return(
+        <div className="HNewHome">
+            <div className="NewMainTitle">
+                GYEONG Studio
+            </div>
+        </div>
+    )
+}
+
 function HomeScreen() {
     return(
         <div className="uppertitle">
-            <Container />
+            <NewHome />
         </div>
     );
 }
 
 function NewsTapContents(props) {
     return (
-        <div className='NewsTapContents'>
+        <div className='HNewsTapContents'>
             <p>
                 { props.NTCname }
             </p>
-            <div className='NewsMore'>
-                <Link to="/news">
-                    More
-                </Link>
-            </div>
         </div>
     );
 }
@@ -49,11 +51,11 @@ function Newslist(props) {
     return (
         <>
             <Link to={'/news/' + props.link }>
-                <div className="NewsContents_Box">
-                    <div className='NewsContents'>
+                <div className="HNContents_Box">
+                    <div className='HNewsContents'>
                         { props.hntitle }
-                        <div className='NewsContentsInfo' id={props.dateId}>
-                            <p className="NewsDate">{ props.hndate }</p>
+                        <div className='HNewsContentsInfo' id={props.dateId}>
+                            <p className="HNewsDate">{ props.hndate }</p>
                         </div>
                     </div>
                 </div>
@@ -63,27 +65,20 @@ function Newslist(props) {
 }
 
 function NewsTap(props) {
-
     return (
-        <div className='NewsTap'>
+        <div className={`HNewsTap ${props.bgcolor}`}>
             <NewsTapContents NTCname={ props.tapName }/>
-            <hr />
-                <Newslist
-                    link= { props.linkto }
-                    hntitle= { props.newsTitle }
-                    hndate= { props.newsDate }
-                    dateId = { props.dateId1 }
-                />
-                <Newslist
-                    link= { props.linkto2 }
-                    hntitle= { props.newsTitle2 }
-                    hndate= { props.newsDate2 }
-                />
-                <Newslist
-                    link= { props.linkto3 }
-                    hntitle= { props.newsTitle3 }
-                    hndate= { props.newsDate3 }
-                />
+            <Newslist
+                link= { props.linkto }
+                hntitle= { props.newsTitle }
+                hndate= { props.newsDate }
+                dateId = { props.dateId }
+            />
+            <div className='HNewsMore'>
+                <Link to="/news">
+                    더보기
+                </Link>
+            </div>
         </div>
     );
 }
@@ -91,115 +86,25 @@ function NewsTap(props) {
 function AllNews() {
 
     let [setTitle] = useState([
-        'Aurora(오로라) 싱글 발매',
-        '-',
-        '-',
-        '-',
-        '-',
-        '-',
+        'Aurora(오로라) 싱글 발매'
     ])
 
     return(
         <div className="HomeTop">
             <NewsTap
-                tapName="뉴스"
+                bgcolor="peach"
+                tapName="📣 최신 소식"
                 linkto={ newsjson.newsinfo[0].date }
                 newsTitle={ newsjson.newsinfo[0].title }
                 newsDate={ newsjson.newsinfo[0].ogdate }
-                linkto2={ newsjson.newsinfo[1].date }
-                newsTitle2={ newsjson.newsinfo[1].title }
-                newsDate2={ newsjson.newsinfo[1].ogdate }
-                linkto3={ newsjson.newsinfo[2].date }
-                newsTitle3={ newsjson.newsinfo[2].title }
-                newsDate3={ newsjson.newsinfo[2].ogdate }
             />
             <NewsTap
-                tapName="일정"
-                dateId1="singleDate"
+                bgcolor="sea"
+                tapName="🗓️ 주요 일정"
+                dateId="singleDate"
                 newsTitle={ setTitle[0] }
                 newsDate="2022-10-23"
-                newsTitle2={ setTitle[1] }
-                newsDate2="-"
-                newsTitle3={ setTitle[2] }
-                newsDate3="-"
             />
-            <NewsTap
-                tapName="준비중"
-                newsTitle={ setTitle[3] }
-                newsDate="-"
-                newsTitle2={ setTitle[4] }
-                newsDate2="-"
-                newsTitle3={ setTitle[5] }
-                newsDate3="-"
-            />
-        </div>
-    );
-}
-
-function HomeContents(props) {
-
-    function showModal(){
-        var modal = document.getElementsByClassName('roundbox')[0];
-        var modalbox = document.getElementsByClassName('roundmodal')[0];
-        
-        modal.addEventListener("click", () => {
-            modalbox.style.display = 'block';
-            modalbox.style.opacity = '100%';
-        });
-    }
-
-    function closeModal(){
-        var close = document.getElementsByClassName('closeBtn')[0]; 
-        var modalbox = document.getElementsByClassName('roundmodal')[0];
-        
-        close.addEventListener("click", () => {
-            modalbox.style.display = 'none';
-        });
-    }
-    
-    return(
-        <>
-            <div className='roundbox' onClick={ showModal }>
-                <div className='roundimg'>
-                    <img src={ props.contentimg } alt='Project_img'/>
-                </div>
-                <div className='roundtitle'>
-                    { props.contenttitle }
-                </div>
-                <div className='rounddesc'>
-                    { props.contentdesc }
-                </div>
-            </div>
-            <div className="roundmodal">
-                <div className='roundmodalindex'>
-                    <div className='modalImg'>
-                        <img src={ props.contentimg } alt='Project_img'/>
-                    </div>
-                    <div className='closeBtn' onClick={ closeModal }>닫기</div>
-                </div>
-            </div>
-        </>
-    );
-}
-
-function Contents() {
-    return (
-        <div className="homecontents">
-            <div className="homecontentstitle">
-                대표 프로젝트
-            </div>
-            <div className="flexcontent">
-                <HomeContents
-                    contentimg={LSimg}
-                    contenttitle="라이프 세이브스"
-                    contentdesc="라이프 세이브스 《Chapter 1》"
-                />
-                <HomeContents
-                    contentimg={Soon}
-                    contenttitle="라이프 세이브스"
-                    contentdesc="라이프 세이브스 《Chapter 2》"
-                />
-            </div>
         </div>
     );
 }
@@ -210,7 +115,6 @@ function Home() {
       <div className="homeBody">
         <HomeScreen />
         <AllNews />
-        <Contents />
       </div>
     );
 }

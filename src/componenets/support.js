@@ -62,11 +62,9 @@ function Issue(){
 
 function Problem(){
 
-    function showContent(event){
+    function showContent(){
         var cktitle = document.querySelectorAll(".quesTitle")
         var ckdesc = document.querySelectorAll(".quesDesc")
-
-        event.preventDefault();
 
         for (let i = 0; i < cktitle.length; i++){
             cktitle[i].addEventListener('click', () => {
@@ -78,7 +76,7 @@ function Problem(){
     const quesList = quesArray.quesinfo.map((quesinfo, index) => {
         return(
             <div className="quesBox" key={index}>
-                <div className="quesTitle" onClick={showContent}>
+                <div className="quesTitle" onClick={() => showContent}>
                     { quesinfo.title }
                 </div>
                 <div className="quesDesc">

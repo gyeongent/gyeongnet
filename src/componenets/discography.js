@@ -89,7 +89,7 @@ function Discography(){
             <Link to={'/discography/' + discoinfo.url} key={index}>
                 <div className="discoBox" id={ discoinfo.class }>
                     <div className="discoImg">
-                        <img src={ discoinfo.img } alt="discoImg"/>
+                        <img src={ discoinfo.img } loading="lazy" alt="discoImg"/>
                     </div>
                     <div className="discoInfo">
                         <div className="discoDesc">
