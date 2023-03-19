@@ -321,14 +321,18 @@ button {
         height: 90vh;
     }
 
+    .uppertitle {
+        margin:  0 1em;
+    }
+
     .HNewHome {
         width: auto;
-        margin: 2em;
+        margin: 1em;
     }
 
     .HNewsTap {
         width: auto;
-        margin: 2em;
+        margin: 1em;
     }
 
     .NewMainTitle {
@@ -339,6 +343,7 @@ button {
 
     .HomeTop {
         display: block;
+        margin: 15px 1em;
     }
 
     .NewsTapContents {
