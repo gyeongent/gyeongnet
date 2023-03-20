@@ -73,6 +73,7 @@ function Header() {
         <>
             {/* <Announcement /> */}
             <div className="header">
+                <div className="backdrop"/>
                 <div className="HeaderArticle_1">
                     <div>
                         <Link to="/">

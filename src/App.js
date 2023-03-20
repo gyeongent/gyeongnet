@@ -17,6 +17,7 @@ import NewsTwo from './componenets/news/220405';
 import NewsThree from './componenets/news/220629';
 import NewsFour from './componenets/news/220728';
 import NewsFive from './componenets/news/221017';
+import NewsSix from './componenets/news/230320';
 
 import Anxiety from './componenets/discography/anxiety';
 import Aurora from "./componenets/discography/aurora";
@@ -43,6 +44,7 @@ function App() {
               <Route path="/download" element={<DownloadPage />}></Route>
               <Route path="/signup" element={<Register />}></Route>
               <Route path="/news" element={ <News /> }></Route>
+              <Route path='/news/230320' element={ <NewsSix />}></Route>
               <Route path="/news/221017" element={ <NewsFive /> }></Route>
               <Route path='/news/220728' element={ <NewsFour/> }></Route>
               <Route path='/news/220629' element={ <NewsThree/> }></Route>

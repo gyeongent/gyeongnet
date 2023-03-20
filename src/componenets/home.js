@@ -86,7 +86,7 @@ function NewsTap(props) {
 function AllNews() {
 
     let [setTitle] = useState([
-        'Aurora(오로라) 싱글 발매'
+        ':)'
     ])
 
     return(
@@ -103,7 +103,7 @@ function AllNews() {
                 tapName="🗓️ 주요 일정"
                 dateId="singleDate"
                 newsTitle={ setTitle[0] }
-                newsDate="2022-10-23"
+                linkto={""}
             />
         </div>
     );

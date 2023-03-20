@@ -10,12 +10,9 @@ function Footer() {
 
     return(
         <div className="footer">
-            <div>
-            </div>
+            <div className="backdrop" />
             <div>
                 &copy; {nowYear}. by GYEONG Studio.
-            </div>
-            <div>
             </div>
         </div>
     );

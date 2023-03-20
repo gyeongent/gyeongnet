@@ -23,9 +23,9 @@ function Status(){
                 현재 서비스 상태
             </div>
             <div className="statusTotal">
-                <StatusArticle stCircle="stGreen" stContent="홈페이지 상태" />
-                <StatusArticle stCircle="stGreen" stContent="메일 서비스" />
-                <StatusArticle stCircle="stGreen" stContent="다운로드 서비스" />
+                <StatusArticle stCircle="stOrange" stContent="홈페이지 상태" />
+                <StatusArticle stCircle="stOrange" stContent="메일 서비스" />
+                <StatusArticle stCircle="stRed" stContent="다운로드 서비스" />
             </div>
         </div>
     );
@@ -131,9 +131,9 @@ function Support(){
                 <Status />
                 <Issue />
             </div>
-            <div className="supportAll">
+            {/* <div className="supportAll">
                 <Problem />
-            </div>
+            </div> */}
             <div className="supportAll">
                 <OtherMail />
             </div>

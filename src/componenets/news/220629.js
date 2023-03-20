@@ -8,10 +8,10 @@ import '../css/news.css';
 function NewsThree(){
     return(
         <NewsComponent 
-            newstitle={ newsjson.newsinfo[2].title }
-            newsdate= { newsjson.newsinfo[2].ogdate }
-            newsdesc={ newsjson.newsinfo[2].desc }
-            imgSrc={ discoArray.discoinfo[2].img }
+            newstitle={ newsjson.newsinfo[3].title }
+            newsdate= { newsjson.newsinfo[3].ogdate }
+            newsdesc={ newsjson.newsinfo[3].desc }
+            imgSrc={ discoArray.discoinfo[3].img }
             imgClass="block"
             pushBack="220405"
             pushNext="220728"
