@@ -39,7 +39,7 @@ function Issue(){
             </div>
             <div className="issueContent">
                 <div className="issueArticle">
-                    발견된 문제가 없습니다 :)
+                     홈페이지 개편 작업으로 인한 점검
                 </div>
                 <div className="issueBar">
                     <hr className="issueHr" />
