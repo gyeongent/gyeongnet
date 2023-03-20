@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import newsjson from '../data/news.json';
 
+import { ImNewTab } from 'react-icons/im'
+
 import './css/home.css';
 
 // const Container = () => (
@@ -109,6 +111,29 @@ function AllNews() {
     );
 }
 
+function Articles(){
+    return(
+        <div>
+            <div className='HomeTop'>
+                <a href='https://ggabi.gyeong.net/' target={'_blank'}>
+                    <div className='ggabiArchive'>
+                        <div className='gaTitle'>
+                            <img src={'https://ggabi.gyeong.net/logo.png'}/>
+                            <span>까비 아카이브</span>
+                        </div>
+                        <div className='gaDesc'>
+                            2018년부터의 까비 추억여행
+                        </div>
+                        <div className='AHNewsMore'>
+                            <ImNewTab />
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    )
+}
+
 
 function Home() {
 
@@ -116,6 +141,7 @@ function Home() {
       <div className="homeBody">
         <HomeScreen />
         <AllNews />
+        <Articles />
       </div>
     );
 }

@@ -11,6 +11,7 @@ import HHBD from '../img/icon/HHBDicon.png';
 // 이미지는 무조건 1:1 사이즈로 올릴것
 
 import './css/download.css';
+import { useEffect } from 'react';
 
 function Banner(props){
     return(
@@ -91,14 +92,16 @@ function DetailContent(props){
 
 function DetailSection(){
 
-    document.addEventListener('scroll', function(){
-        var st = document.getElementsByClassName('SideTitle')[0];
-
-        if(window.scrollY > 700 && document.body.clientWidth >= 768){
-            st.classList.add('fixed');
-        } else {
-            st.classList.remove('fixed');
-        }
+    useEffect(() => {
+        document.addEventListener('scroll', function(){
+            var st = document.getElementsByClassName('SideTitle')[0];
+    
+            if(window.scrollY > 700 && document.body.clientWidth >= 768){
+                st.classList.add('fixed');
+            } else {
+                st.classList.remove('fixed');
+            }
+        })
     })
 
     return(
