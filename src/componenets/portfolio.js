@@ -1,26 +1,36 @@
 import React, { useState } from 'react';
-import { Parallax } from 'react-parallax';
+// import { Parallax } from 'react-parallax';
 
 import './css/portfolio.css';
 
-const Container = () => (
-    <Parallax
-        blur={{ min: -13, max: 15}}
-        bgImage={require('../img/honey_moon.png')}
-        bgImageAlt="Main Title image"
-        strength={-200}
-    >
-        <div className="maintitle">
-            나의 판타지 세계
+// const Container = () => (
+//     <Parallax
+//         blur={{ min: -13, max: 15}}
+//         bgImage={require('../img/honey_moon.png')}
+//         bgImageAlt="Main Title image"
+//         strength={-200}
+//     >
+//         <div className="maintitle">
+//             나의 판타지 세계
+//         </div>
+//         <div className='MainSection' />
+//     </Parallax>
+// );
+
+const NewHome = () => {
+    return(
+        <div className="PHNewHome">
+            <div className="NewMainTitle">
+                나의 판타지 세계
+            </div>
         </div>
-        <div className='MainSection' />
-    </Parallax>
-);
+    )
+}
 
 function HomeScreen() {
     return(
         <div className="uppertitle">
-            <Container />
+            <NewHome />
         </div>
     );
 }

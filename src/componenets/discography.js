@@ -6,82 +6,6 @@ import discoArray from "../data/discography.json";
 import './css/news.css';
 import './css/discography.css';
 
-function DiscoNavi(){
-
-    window.ready = function(){
-        const digiNav = document.getElementById("digitalNav");
-        const showAll = document.getElementById("showAllNav");
-        const albumNav = document.getElementById("albumNav");
-        const cdNav = document.getElementById("cdNav");
-
-        const showAllContent = () => {
-            const album = document.getElementById("album");
-            const digital = document.getElementById("digital");
-            const cd = document.getElementById("cd");
-
-            album.style.display = "block";
-            digital.style.display = "block";
-            cd.style.display = "block";
-        }
-
-        const removeDigital = () => {
-            const album = document.getElementById("album");
-            const digital = document.getElementById("digital");
-            const cd = document.getElementById("cd");
-
-            album.style.display = "block";
-            digital.style.display = "none";
-            cd.style.display = "none";
-        }
-
-        const removeAlbum = () => {
-            const album = document.getElementById("album");
-            const digital = document.getElementById("digital");
-            const cd = document.getElementById("cd");
-
-            album.style.display = "none";
-            digital.style.display = "block";
-            cd.style.display = "none";
-        }
-
-        const showCd = () => {
-            const album = document.getElementById("album");
-            const digital = document.getElementById("digital");
-            const cd = document.getElementById("cd");
-
-            album.style.display = "none";
-            digital.style.display = "none";
-            cd.style.display = "block";
-        }
-
-        showAll.addEventListener("click", showAllContent);
-        digiNav.addEventListener("click", removeAlbum);
-        albumNav.addEventListener("click", removeDigital);
-        cdNav.addEventListener("click", showCd)
-
-
-    }
-
-    return(
-        <div className="discoNavi">
-            <ul>
-                <li id="showAllNav">
-                    전체
-                </li>
-                <li id="digitalNav">
-                    디지털
-                </li>
-                <li id="cdNav">
-                    CD
-                </li>
-                <li id="albumNav">
-                    앨범
-                </li>
-            </ul>
-        </div>
-    );
-}
-
 function Discography(){
 
     const discoList = discoArray.discoinfo.map((discoinfo, index) => {
@@ -125,13 +49,10 @@ function Discography(){
 
     return(
         <>
-        <div className="discoNaviAll">
-            <DiscoNavi />
-        </div>
         <div className='newsFlex'>
             <div className='newsSide'>
                 <div>
-                    Discography
+                    디스코그래피
                 </div>
             </div>
             <div className='newsdiscoContent'>

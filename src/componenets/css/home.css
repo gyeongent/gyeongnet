@@ -191,27 +191,6 @@ button {
     height: 180px;
 }
 
-.New_icon {
-    font-size: 9px;
-    border-radius: 5px;
-    background-color: red;
-    width: max-content;
-    padding: 2px 5px;
-    color:white;
-    margin-top: 5px;
-    margin-right: 8px;
-}
-
-.New_icon_inpage {
-    font-size: 9px;
-    border-radius: 5px;
-    background-color: red;
-    width: max-content;
-    padding: 2px 5px;
-    color:white;
-    margin-bottom: 5px;
-}
-
 .homecontentstitle{
     font-weight: 700;
     font-size: 35px;
@@ -308,12 +287,24 @@ button {
     width: 100%;
 }
 
+.PHNewHome {
+    width: auto;
+    height: 500px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 2.5em;
+    background: url(../../img/honey_moon.png);
+    background-position: center;
+    background-size: cover;
+}
+
 @media only screen and (max-width: 820px) {
     .HNewHome {
         width: auto;
     }
 }
-
 
 @media only screen and (max-width: 768px) {
 
@@ -336,6 +327,7 @@ button {
 
     .HNewsTap {
         width: auto;
+        height: max-content;
         margin: 1em;
     }
 

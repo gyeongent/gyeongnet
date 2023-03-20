@@ -1,45 +1,52 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import { NavLink, useParams } from 'react-router-dom'
 import newsArray from '../data/news.json';
 
 import './css/news.css';
 
 function News() {
 
+    const { newsId } = useParams();
+
     const renderList = newsArray.newsinfo.map((newsinfo, index) => {
         return(
-            <Link to={'/news/' + newsinfo.date } key={index}>
+            <NavLink to={'/news/' + newsinfo.date } key={index}>
                 <div className="NewsContents_Box">
                     <div className='NewsContents'>
-                        { newsinfo.title }
-                        <div className='NewsContentsInfo'>
-                            <p className="NewsDate">{ newsinfo.ogdate }</p>
-                        </div>
+                        { newsinfo.ogdate }
                     </div>
                 </div>
-            </Link>
+            </NavLink>
         )
     })
 
-    document.addEventListener('scroll', function(){
-        var st = document.getElementsByClassName('newsSide')[0]
-
-        if(window.scrollY > 100 && document.body.clientWidth >= 768){
-            st.classList.add('sideFixed');
-        } else {
-            st.classList.remove('sideFixed');
-        }
-    })
+    const newsContent = newsArray.newsinfo.filter(content => content.date === newsId)
 
     return(
-        <div className='newsFlex'>
+        <div>
             <div className="newsSide">
-                <div>
-                    NEWS
-                </div>
+                최신 소식
             </div>
             <div className="newsContent">
                 { renderList }
+            </div>
+            <div>
+                {newsContent.map(content => (
+                    <div className='newsInfo'>
+                        <div className='newsTitle'>
+                            {content.title}
+                        </div>
+                        <div className='newsDate'>
+                            {content.ogdate}
+                        </div>
+                        <div className='newsImg'>
+                            <img src={content.img} className={content.imgClass}/>
+                        </div>
+                        <div className='newsDesc'>
+                            {content.desc}
+                        </div>
+                    </div>
+                ))}
             </div>
         </div>
     );

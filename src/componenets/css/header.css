@@ -29,7 +29,7 @@ a {
 }
 
 .active {
-    color: tomato;
+    color: inherit;
 }
 
 .header.scroll {
@@ -123,9 +123,10 @@ a {
 
 @media only screen and (max-width: 820px) {
 
-    .header {
-        background-color: white;
+    .header > .HeaderArticle_1 {
+        margin-left: 20px;
     }
+
     .header > .HeaderArticle_1 > ul {
         display: none;
     }
