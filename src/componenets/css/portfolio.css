@@ -1,3 +1,10 @@
+.gallery_nav {
+    position: absolute;
+    top: 1100px;
+    left: 0;
+    font-size: 50px;
+}
+
 .ContentsSection {
     position: relative;
     width: 100%;
@@ -7,87 +14,111 @@
     background-color: white;
 }
 
+.gallery {
+    display: flex;
+    transition: all 0.2s ease;
+    animation: moveGallery 25s linear infinite alternate;
+}
+
+@keyframes moveGallery {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-2240px)
+    }
+}
+
 .pfo_contents {
     display: flex;
     flex-direction: row;
-    padding: 5vw;
+    padding: 0 10em;
     height: 100%;
 }
 
-.pfo_nav {
-    width: 90px;
-    word-break: keep-all;
-    top: 0;
-    height: max-content;
-    left: 0;
-    background-color: #fff;
-}
-
-.pfo_nav > ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.pfo_nav > ul > li {
-    padding: 20px 0 0 20px;
-    font-weight: 700;
-    font-size: 17px;
-    width: max-content;
-}
-
-.pfo_hr {
-    width: 0%;
-    background-color: tomato;
-    height: 3px;
-    text-align: left;
-    margin-left: 0;
-    transition: all 0.5s ease;
-    margin-top: 3px;
-}
-
-.pfo_nav > ul > li:hover {
-    cursor: pointer;
-}
-
-.pfo_nav > ul > li:hover .pfo_hr {
+.pfo_contents > div {
     width: 100%;
 }
 
-.pfo_info {
-    padding: 20px 10% 20px 10%;
-    width: 45%;
-    display: inline-block;
-    min-height: 500px;
+.pfoArticle{
+    padding: 100px 0;
+    width: 100%;
 }
 
-.pfo_title {
+.pfoFirst {
+    width: 70%;
+}
+
+.pfoArticle:hover > .pfoFirst > .pfoTitle {
+    width: max-content;
+    height: max-content;
+    background: linear-gradient(170deg, GoldenRod, darkgreen);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: all 0.3s ease;
+}
+
+.pfoTitle {
     font-weight: 700;
     font-size: 50px;
     letter-spacing: -4px;
-}
-
-.pfo_desc {
-    font-size: 20px;
-}
-
-.pfo_go {
-    margin-top: 30px;
-}
-
-.pfo_btn {
+    transition: all 0.3s ease;
     color: black;
-    transition: all 0.2s ease;
 }
 
-.pfo_btn:hover {
-    color: tomato;
+.pfoDesc {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    word-break: keep-all;
+    margin-top: 10px;
 }
 
+.pfoDesc > span {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
 
-.clicked {
-    color: tomato;
-    width: 100%;
+.spotifyEmbed {
+    margin-top: 20px;
+    display: flex;
+}
+
+.spotifyEmbed > iframe {
+    margin-right: 15px;
+}
+
+.pfoGraphicPictures {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: auto;
+    height: 350px;
+    overflow: hidden;
+}
+
+.pfoGraphicPictures > .gallery > div {
+    min-width: 300px;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.pfoGraphicPictures > .gallery > div > img {
+    width: 300px;
+}
+
+.linkto {
+    font-weight: 400;
+    font-size: 17px;
+    margin: 10px 0;
+    color: darkolivegreen;
 }
 
 @media only screen and (max-width: 768px) {
@@ -98,7 +129,7 @@
 
     .pfo_contents {
         display: block;
-        width: 100%;
+        width: auto;
         padding: 5vw;
     }
 
@@ -130,5 +161,24 @@
     .pfo_info {
         width: 80%;
         padding: 5vw;
+    }
+
+    .pfoArticle {
+        margin: 0 1em;
+        width: auto;
+    }
+
+    .pfoFirst {
+        width: auto;
+    }
+
+    .spotifyEmbed {
+        overflow-x: scroll;
+        width: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    .spotifyEmbed::-webkit-scrollbar{
+        display: none;
     }
 }

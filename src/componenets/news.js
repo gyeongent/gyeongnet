@@ -40,7 +40,7 @@ function News() {
                             {content.ogdate}
                         </div>
                         <div className='newsImg'>
-                            <img src={content.img} className={content.imgClass}/>
+                            <img src={content.img} className={content.imgClass} alt={content.title}/>
                         </div>
                         <div className='newsDesc'>
                             {content.desc}

@@ -233,6 +233,7 @@ button {
     justify-content: center;
     margin: 0 auto;
     padding: 2.5em;
+    margin: 0 7.5em;
     background: url(../../img/honey_moon.png);
     background-position: center;
     background-size: cover;
@@ -316,6 +317,11 @@ button {
     .HNewHome {
         width: auto;
         margin: 1em;
+    }
+
+    .PHNewHome {
+        margin: .5em;
+        word-break: keep-all;
     }
 
     .HNewsTap {

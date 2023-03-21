@@ -115,10 +115,10 @@ function Articles(){
     return(
         <div>
             <div className='HomeTop'>
-                <a href='https://ggabi.gyeong.net/' target={'_blank'}>
+                <a href='https://ggabi.gyeong.net/' target={'_blank'} rel="noreferrer">
                     <div className='ggabiArchive'>
                         <div className='gaTitle'>
-                            <img src={'https://ggabi.gyeong.net/logo.png'}/>
+                            <img src={'https://ggabi.gyeong.net/logo.png'} alt={"까비 아카이브"}/>
                             <span>까비 아카이브</span>
                         </div>
                         <div className='gaDesc'>
