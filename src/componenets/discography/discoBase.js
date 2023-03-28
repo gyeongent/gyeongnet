@@ -40,6 +40,9 @@ function DiscoBase(props){
                     <p>{props.copyright}</p>
                     <p>{props.publisher}</p>
                 </div>
+                <div className='thisDiscoNotice'>
+                    <p>{props.notice}</p>
+                </div>
             </div>
         </div>
     );

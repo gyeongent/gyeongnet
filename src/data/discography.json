@@ -1,6 +1,21 @@
 {
     "discoinfo" : [
         {
+            "id": 3,
+            "name": "Mellow",
+            "release": "2024.",
+            "type": "싱글",
+            "class": "album",
+            "trackNum": ["1", "2", "3"],
+            "trackName": ["Chiffon(쉬폰)", "-", "오로라(Aurora) (Remastered Version)"],
+            "trackLength": ["-", "-", "2:10"],
+            "url": "mellow",
+            "img": "https://i.ibb.co/D848fFK/soon.jpg",
+            "copyright": "© 2024 GYEONG",
+            "publisher": "℗ 2024 GYEONG, under license to OZZ",
+            "notice": "현재 발매 진행중인 앨범이며, 추후 사양이 변경될 수 있습니다."
+        },
+        {
             "id": 2,
             "name": "Chiffon(쉬폰)",
             "release": "2023. 05. 25.",
@@ -9,10 +24,11 @@
             "trackNum": ["1"],
             "trackName": ["Chiffon(쉬폰)"],
             "trackLength": ["-"],
-            "url": "mellow",
+            "url": "chiffon",
             "img": "https://i.ibb.co/D848fFK/soon.jpg",
             "copyright": "© 2023 GYEONG",
-            "publisher": "℗ 2023 GYEONG, under license to OZZ"
+            "publisher": "℗ 2023 GYEONG, under license to OZZ",
+            "notice": "현재 발매 진행중인 앨범이며, 추후 사양이 변경될 수 있습니다."
         },
         {
             "id": 1,

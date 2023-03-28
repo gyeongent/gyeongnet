@@ -3,13 +3,12 @@ import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import discoArray from "../data/discography.json";
 
-import DiscoBase, { Tracks } from './discography/discoBase';
+import DiscoBase from './discography/discoBase';
 
 import { BiLeftArrowAlt } from 'react-icons/bi'
 
 import './css/news.css';
 import './css/discography.css';
-import { useEffect } from 'react';
 
 function Discography(){
 
@@ -50,6 +49,8 @@ function Discography(){
         )
     })
 
+
+
     const discoContent = discoArray.discoinfo.filter(content => content.url === discoId)
 
     const closeDetail = () => {
@@ -58,6 +59,11 @@ function Discography(){
         
         detail[0].style.display = 'block'
         newDetail[0].style.display = 'none'
+    }
+
+    const lineJump = () => {
+        document.createElement('p');
+
     }
 
     return(
@@ -77,7 +83,7 @@ function Discography(){
                     <div className='newsFlex New' key={index}>
                         <div className='newsSide'>
                             <div className='discoBigTitle'>
-                                <BiLeftArrowAlt onClick={closeDetail}/><div>디스코그래피</div><div />
+                                <BiLeftArrowAlt onClick={closeDetail}/><div>디스코그래피</div>
                             </div>
                         </div>
                         <div className='newsdiscoContent'>
@@ -87,13 +93,14 @@ function Discography(){
                                 relDate={content.release}
                                 tracks={discoContent.map((content, index) => (
                                     <div className='aboutTrack' key={index}>
-                                        <div>{content.trackNum}</div>
+                                        <div className='trackNum' onLoad={lineJump}>{content.trackNum + ''}</div>
                                         <div>{content.trackName}</div>
                                         <div>{content.trackLength}</div>
                                     </div>
                                 ))}
                                 copyright={content.copyright}
                                 publisher={content.publisher}
+                                notice={content.notice}
                             />
                         </div>
                     </div>
