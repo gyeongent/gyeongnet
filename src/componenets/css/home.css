@@ -246,6 +246,9 @@ button {
     border-radius: 30px;
     background: linear-gradient(160deg, rgb(255, 162, 55), rgb(255, 208, 40));
     transition: all 0.2s ease;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .gaTitle {
@@ -295,8 +298,8 @@ button {
 }
 
 @media only screen and (max-width: 820px) {
-    .HNewHome {
-        width: auto;
+    .HNewHome, .ggabiArchive {
+        width: 650px;
     }
 }
 
@@ -365,5 +368,14 @@ button {
         height: max-content;
         margin: 1em;
         word-break: keep-all;
+    }
+
+    .gaTitle > img {
+        width: 17vw;
+    }
+
+    .gaTitle > span {
+        white-space: nowrap;
+        font-size: 7vw;
     }
 }

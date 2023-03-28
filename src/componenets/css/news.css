@@ -19,6 +19,11 @@
     display: flex;
     justify-content: center;
     padding: 70px;
+    align-items: center;
+}
+
+.newsSide > span > svg {
+    cursor: pointer;
 }
 
 .newsContent {
@@ -116,7 +121,7 @@
         width: auto;
         padding: 1em;
         text-align: center;
-        font-size: 4em;
+        font-size: 3em;
         transform: translateY(5vh) translateZ(0px);
         background: none;
     }
@@ -138,5 +143,4 @@
     .newsImg {
         width: 100%;
     }
-
 }

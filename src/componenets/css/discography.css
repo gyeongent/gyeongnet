@@ -6,15 +6,14 @@ hr {
 .discoBox {
     font-weight: 400;
     margin-right: 40px;
-    width: 20vw;
-    height: max-content;
-    overflow: hidden;
+    width: 20em;
+    height: 20em;
     text-overflow: ellipsis;
 }
 
 .discoInfo {
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding: 10px;
+    color: black;
 }
 
 .discoTitle {
@@ -26,53 +25,21 @@ hr {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    background-color: black;
 }
 
 .discoImg > img {
     width: 100%;
     object-fit: cover;
     display: block;
-    background-image: url("../../img/soon.jpg");
-    background-position: center;
-    background-size: cover;
 }
 
 .newsdiscoContent {
     display: flex;
-    height: auto;
     flex-wrap: nowrap;
-    width: 100%;
-    padding-left: 350px;
-    padding-top: 50px;
-    padding-bottom: 350px;
-}
-
-.discoNavi {
-    width: 100%;
-}
-
-.discoNaviAll {
-    width: 100%;
-    right: 0;
-    position: static;
-}
-
-.discoNavi > ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    float: right;
-    padding-right: 100px;
-    padding-top: 50px;
-}
-
-.discoNavi > ul > li {
-    margin-left: 20px;
-    font-size: 25px;
-    cursor: pointer;
-    font-weight: 200;
-    transition: all 0.3s ease;
+    width: auto;
+    padding: 25px 100px;
+    justify-content: center;
 }
 
 #digital {
@@ -101,7 +68,7 @@ hr {
     white-space: nowrap;
     margin-top: 5px;
     margin-bottom: 5px;
-    
+    color: black;
 }
 
 .discoDesc {
@@ -110,7 +77,7 @@ hr {
 }
 
 .aboutDisco {
-    width: 100%;
+    width: 70%;
     display: flex;
 }
 
@@ -129,11 +96,27 @@ hr {
     padding: 3%;
 }
 
+.discoBigTitle {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.discoBigTitle > svg {
+    cursor: pointer;
+}
+
 .aboutTrack {
     width: 100%;
     display: flex;
     justify-content: space-between;
     font-weight: 400;
+}
+
+.aboutTrack > div:nth-child(-n + 3)::after {
+    content: " ";
 }
 
 .thisDiscoTitle {
@@ -154,17 +137,57 @@ hr {
     color: rgb(167, 167, 167);
 }
 
+.New {
+    padding-top: 80px;
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.newsFlex {
+    display: block;
+}
+
+@media only screen and (max-width: 820px) {
+    .newsdiscoContent{
+        flex-direction: column;
+    }
+
+    .discoBox {
+        width: auto;
+        height: auto;
+        margin-top: 50px;
+        margin-right: 0;
+    }
+
+    .aboutDisco {
+        width: auto;
+        flex-direction: column;
+    }
+
+    .bigImg, .thisDisco {
+        width: auto;
+    }
+
+    .bigImg {
+        margin-top: 50px;
+    }
+}
 
 @media only screen and (max-width: 768px) {
 
     .newsFlex {
-        width: 100%;
+        width: auto;
     }
     .newsdiscoContent {
-        display: block;
-        width: 100%;
-        padding: 10vw;
-        margin-top: 10vh;
+        display: flex;
+        justify-content: center;
+        padding: 2.5em;
+        margin-top: 0;
+        width: auto;
     }
 
     .discoBox {
@@ -189,14 +212,28 @@ hr {
     }
 
     .bigImg {
-        width: 83%;
+        width: auto;
     }
 
     .thisDisco{
-        width: 80%;
+        width: auto;
         padding: 0;
         margin-top: 3vh;
         margin-bottom: 3vh;
+    }
+
+    .aboutDisco {
+        width: auto;
+    }
+
+    .discoBox {
+        width: auto;
+        height: auto;
+    }
+
+    .New {
+        width: auto;
+        min-height: 100vh;
     }
 
 }

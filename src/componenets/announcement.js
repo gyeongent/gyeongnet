@@ -16,8 +16,7 @@ function Announcement() {
     return (
         <div className='announcement'>
             <div className='desc'>
-                웹페이지 시스템이 기존 HTML5에서 React로 변경되었습니다. 버그를 발견하셨다면
-                &nbsp;<a href='mailto:support@gyeong.net' style={ { color : 'white' } }><u>여기</u></a>로 제보해주시면 감사하겠습니다.
+                디자인 업데이트가 완료되었습니다.
             </div>
             <div className='desc' id='close' onClick={ closeEvent }>
                 <div className='button'>

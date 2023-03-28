@@ -4,7 +4,6 @@ import "../css/discography.css";
 
 export function Tracks(props){
     return(
-        <>
         <div className="aboutTrack">
             <div>
                 {props.trackNum}
@@ -16,8 +15,6 @@ export function Tracks(props){
                 {props.trackLength}
             </div>
         </div>
-        <hr />
-        </>
     );
 }
 
@@ -38,12 +35,7 @@ function DiscoBase(props){
                 <div>
                     {props.tracks}
                 </div>
-                <div>
-                    {props.tracks2}
-                </div>
-                <div>
-                    {props.tracks3}
-                </div>
+                <hr />
                 <div className="discoCredit">
                     <p>{props.copyright}</p>
                     <p>{props.publisher}</p>
