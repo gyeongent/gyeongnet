@@ -108,8 +108,8 @@ function AllNews() {
                 dateId="singleDate"
                 newsTitle={'육군 제3보병사단 입대'}
                 newsDate={`D - ${day}`}
-                linkto={""}
-                moreLink={''}
+                linkto={'/army'}
+                moreLink={'/army'}
             />
         </div>
     );

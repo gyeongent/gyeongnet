@@ -1,0 +1,51 @@
+.thecampArticle {
+    width: max-content;
+    padding: 10em
+}
+
+.thecampTitle {
+    align-items:start;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: -2px;
+    color: #028086;
+}
+
+.thecampLogo {
+    width: 165px;
+    height: 100%;
+}
+
+.thecampLogo > img {
+    width: 150%;
+    height: 100%;
+}
+
+.contentSection {
+    padding: 15px 0;
+}
+
+.addArmy {
+    display: flex;
+    font-weight: 400;
+    font-size: 17px;
+    border-bottom: 1px solid lightgray;
+    letter-spacing: -1px;
+}
+
+.addArmy > div {
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.category {
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+    .thecampArticle {
+        padding: 5em 2em;
+        width: auto;
+    }
+}
