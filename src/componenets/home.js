@@ -52,7 +52,7 @@ function NewsTapContents(props) {
 function Newslist(props) {
     return (
         <>
-            <Link to={'/news/' + props.link }>
+            <Link to={ props.link }>
                 <div className="HNContents_Box">
                     <div className='HNewsContents'>
                         { props.hntitle }
@@ -77,7 +77,7 @@ function NewsTap(props) {
                 dateId = { props.dateId }
             />
             <div className='HNewsMore'>
-                <Link to="/news">
+                <Link to={ props.moreLink }>
                     더보기
                 </Link>
             </div>
@@ -87,25 +87,29 @@ function NewsTap(props) {
 
 function AllNews() {
 
-    let [setTitle] = useState([
-        ':)'
-    ])
+    const setDate = new Date("2023-06-27T00:00:00+0900");
+    const nowDate = new Date();
+    const distanceDate = setDate.getTime() - nowDate.getTime();
+    const day = Math.floor(distanceDate/(1000*60*60*24))
 
     return(
         <div className="HomeTop">
             <NewsTap
                 bgcolor="peach"
                 tapName="📣 최신 소식"
-                linkto={ newsjson.newsinfo[0].date }
+                linkto={ '/news/' + newsjson.newsinfo[0].date }
                 newsTitle={ newsjson.newsinfo[0].title }
                 newsDate={ newsjson.newsinfo[0].ogdate }
+                moreLink={'/news'}
             />
             <NewsTap
                 bgcolor="sea"
                 tapName="🗓️ 주요 일정"
                 dateId="singleDate"
-                newsTitle={ setTitle[0] }
+                newsTitle={'육군 제3보병사단 입대'}
+                newsDate={`D - ${day}`}
                 linkto={""}
+                moreLink={''}
             />
         </div>
     );
