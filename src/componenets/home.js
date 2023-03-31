@@ -90,7 +90,7 @@ function AllNews() {
     const setDate = new Date("2023-06-27T00:00:00+0900");
     const nowDate = new Date();
     const distanceDate = setDate.getTime() - nowDate.getTime();
-    const day = Math.floor(distanceDate/(1000*60*60*24))
+    const day = Math.floor(distanceDate/(1000*60*60*24) + 1)
 
     return(
         <div className="HomeTop">
