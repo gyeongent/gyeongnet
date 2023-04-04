@@ -33,7 +33,6 @@ function ArmyPage(){
                 <Index category="생년월일" content="2003년 10월 21일"/>
                 <Index category="입영일" content="2023년 06월 27일"/>
                 <Index category="입영부대" content="제3보병사단(3사단) 신병교육대"/>
-                <Index category="보고싶은군인 전화번호" content="+82KR 1043145616"/>
             </div>
         </div>
     )

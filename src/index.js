@@ -5,6 +5,7 @@ import './index.css';
 import ScrollTop from './componenets/ScrollTop';
 import App from './App';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <BrowserRouter>

@@ -12,7 +12,7 @@ function Footer() {
         <div className="footer">
             <div className="backdrop" />
             <div>
-                &copy; {nowYear}. by GYEONG Studio.
+                &copy; {nowYear}. by GYEONG Studio / GYEONG.
             </div>
         </div>
     );
