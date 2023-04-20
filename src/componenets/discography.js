@@ -61,10 +61,10 @@ function Discography(){
         )
     }))
 
-    const trackNameContent = discoContent.map(trk => trk.trackName.map((tm, index) => {
+    const trackNameContent = discoContent.map(trk => trk.trackName.map((tt, index) => {
         return(
             <p>
-                {tm}
+                {tt}
             </p>
         )
     }))
@@ -106,21 +106,39 @@ function Discography(){
                             </div>
                         </div>
                         <div className='newsdiscoContent'>
-                            <DiscoBase
-                                bigImg={content.img}
-                                dscTitle={content.name}
-                                relDate={content.release}
-                                tracks={discoContent.map((content, index) => (
-                                    <div className='aboutTrack' key={index}>
-                                        <div className='trackNum'>{trackNumContent}</div>
-                                        <div>{trackNameContent}</div>
-                                        <div>{trackLengthContent}</div>
+                            <div className="aboutDisco">
+                                <div className="bigImg">
+                                    <img src={content.img} alt="bigImg"/>
+                                </div>
+                                <div className="thisDisco">
+                                    <div className="thisDiscoTitle">
+                                        {content.name}
                                     </div>
-                                ))}
-                                copyright={content.copyright}
-                                publisher={content.publisher}
-                                notice={content.notice}
-                            />
+                                    <div className="thisDiscoDate">
+                                        {content.release}
+                                    </div>
+                                    <hr />
+                                    <div>
+                                        {discoContent.map((index) => (
+                                            <div>
+                                                <div className='aboutTrack' key={index}>
+                                                    <div className='trackNum'>{trackNumContent}</div>
+                                                    <div>{trackNameContent}</div>
+                                                    <div>{trackLengthContent}</div>
+                                                </div>
+                                            </div>
+                                        ))}
+                                        <hr />
+                                    </div>
+                                    <div className="discoCredit">
+                                        <p>{content.copyright}</p>
+                                        <p>{content.publisher}</p>
+                                    </div>
+                                    <div className='thisDiscoNotice'>
+                                        <p>{content.notice}</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 ))}
