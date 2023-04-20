@@ -1,22 +1,37 @@
 {
     "discoinfo" : [
         {
-            "id": 3,
-            "name": "Mellow",
+            "id": 5,
+            "name": "Together",
             "release": "2024.",
             "type": "싱글",
             "class": "album",
             "trackNum": ["1", "2", "3"],
-            "trackName": ["Chiffon(쉬폰)", "-", "오로라(Aurora) (Remastered Version)"],
-            "trackLength": ["-", "-", "2:10"],
-            "url": "mellow",
+            "trackName": ["Chiffon(쉬폰)", "-", "오로라(Aurora) (Remastered Ver.)"],
+            "trackLength": ["-", "-", "-"],
+            "url": "together",
             "img": "https://i.ibb.co/D848fFK/soon.jpg",
             "copyright": "© 2024 GYEONG",
             "publisher": "℗ 2024 GYEONG, under license to OZZ",
             "notice": "현재 발매 진행중인 앨범이며, 추후 사양이 변경될 수 있습니다."
         },
         {
-            "id": 2,
+            "id": 4,
+            "name": "Alone",
+            "release": "2023.",
+            "type": "싱글",
+            "class": "album",
+            "trackNum": ["1", "2", "3"],
+            "trackName": ["Anxiety(불안장애)", "-", "깊은 밤(Old Night)"],
+            "trackLength": ["2:04", "-", "0:49"],
+            "url": "alone",
+            "img": "https://i.ibb.co/D848fFK/soon.jpg",
+            "copyright": "© 2024 GYEONG",
+            "publisher": "℗ 2024 GYEONG, under license to OZZ",
+            "notice": "현재 발매 진행중인 앨범이며, 추후 사양이 변경될 수 있습니다."
+        },
+        {
+            "id": 3,
             "name": "Chiffon(쉬폰)",
             "release": "2023. 05. 25.",
             "type": "디지털",
@@ -29,6 +44,20 @@
             "copyright": "© 2023 GYEONG",
             "publisher": "℗ 2023 GYEONG, under license to OZZ",
             "notice": "현재 발매 진행중인 앨범이며, 추후 사양이 변경될 수 있습니다."
+        },
+        {
+            "id": 2,
+            "name": "깊은 밤(Old Night)",
+            "release": "2023. 04. 30.",
+            "type": "디지털",
+            "class": "diigtal",
+            "trackNum": ["1"],
+            "trackName": ["깊은 밤(Old Night)"],
+            "trackLength": ["0:47"],
+            "url": "oldnight",
+            "img": "https://portfolio.gyeong.net/static/media/10092_cover.jpg",
+            "copyright": "© 2023 GYEONG",
+            "publisher": "℗ 2023 GYEONG, under license to OZZ"
         },
         {
             "id": 1,

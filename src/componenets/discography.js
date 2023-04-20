@@ -53,17 +53,36 @@ function Discography(){
 
     const discoContent = discoArray.discoinfo.filter(content => content.url === discoId)
 
+    const trackNumContent = discoContent.map(trk => trk.trackNum.map((tn, index) => {
+        return(
+            <p>
+                {tn}
+            </p>
+        )
+    }))
+
+    const trackNameContent = discoContent.map(trk => trk.trackName.map((tm, index) => {
+        return(
+            <p>
+                {tm}
+            </p>
+        )
+    }))
+
+    const trackLengthContent = discoContent.map(trk => trk.trackLength.map((tl, index) => {
+        return(
+            <p>
+                {tl}
+            </p>
+        )
+    }))
+
     const closeDetail = () => {
         const detail = document.getElementsByClassName('newsFlex')
         const newDetail = document.getElementsByClassName('New')
         
         detail[0].style.display = 'block'
         newDetail[0].style.display = 'none'
-    }
-
-    const lineJump = () => {
-        document.createElement('p');
-
     }
 
     return(
@@ -93,9 +112,9 @@ function Discography(){
                                 relDate={content.release}
                                 tracks={discoContent.map((content, index) => (
                                     <div className='aboutTrack' key={index}>
-                                        <div className='trackNum' onLoad={lineJump}>{content.trackNum + ''}</div>
-                                        <div>{content.trackName}</div>
-                                        <div>{content.trackLength}</div>
+                                        <div className='trackNum'>{trackNumContent}</div>
+                                        <div>{trackNameContent}</div>
+                                        <div>{trackLengthContent}</div>
                                     </div>
                                 ))}
                                 copyright={content.copyright}
