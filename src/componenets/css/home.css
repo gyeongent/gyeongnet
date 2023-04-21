@@ -239,6 +239,20 @@ button {
     background-size: cover;
 }
 
+.DHNewHome {
+    width: auto;
+    height: 500px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 2.5em;
+    margin: 0 7.5em;
+    background: url(../../img/discobg.png);
+    background-position: center;
+    background-size: contain;
+}
+
 .ggabiArchive {
     width: 51em;
     height: 300px;

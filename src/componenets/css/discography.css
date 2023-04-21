@@ -6,7 +6,7 @@ hr {
 .discoBox {
     font-weight: 400;
     margin: 10px;
-    width: 20em;
+    width: 320px;
     height: auto;
     text-overflow: ellipsis;
 }
@@ -38,12 +38,23 @@ hr {
 .newsdiscoContent {
     display: flex;
     flex-wrap: nowrap;
-    padding: 25px 150px;
-    justify-content:center;
+    justify-content: center;
     flex-wrap: wrap;
     overflow-x: hidden;
     height: auto;
     margin: 0 auto;
+    width: 70%;
+}
+
+.newsdiscoContentDetail {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
 }
 
 

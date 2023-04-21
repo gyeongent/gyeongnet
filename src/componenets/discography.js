@@ -105,7 +105,7 @@ function Discography(){
                                 <BiLeftArrowAlt onClick={closeDetail}/><div>디스코그래피</div>
                             </div>
                         </div>
-                        <div className='newsdiscoContent'>
+                        <div className='newsdiscoContentDetail'>
                             <div className="aboutDisco">
                                 <div className="bigImg">
                                     <img src={content.img} alt="bigImg"/>
