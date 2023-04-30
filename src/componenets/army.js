@@ -27,12 +27,13 @@ function ArmyPage(){
                 </div>
             </div>
             <div className="contentSection">
-                <Index category="성분" content="훈련병"/>
+                <Index category="성분" content="예비군인/훈련병"/>
                 <Index category="군종" content="육군"/>
                 <Index category="이름" content="이경민"/>
                 <Index category="생년월일" content="2003년 10월 21일"/>
                 <Index category="입영일" content="2023년 06월 27일"/>
-                <Index category="입영부대" content="제3보병사단(3사단) 신병교육대"/>
+                <Index category="보고싶은 군인 전화번호" content="01043145616" />
+                <Index category="입영부대" content="3사단-철원"/>
             </div>
         </div>
     )
