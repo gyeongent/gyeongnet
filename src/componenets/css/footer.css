@@ -8,7 +8,6 @@
     letter-spacing: -0.5px;
     justify-content: space-evenly;
     font-family: 'Jost';
-    background-color: rgb(240, 240, 240, 0.5);
     border-top: 1px solid rgb(0, 0, 0, 0.1);
     z-index: 1;
 }
@@ -27,4 +26,17 @@
     height: 80px;
     position: absolute;
     z-index: -5;
+}
+
+.mode {
+    position: absolute;
+    bottom: 0;
+    color: inherit;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+}
+
+.mode:after {
+    content: "테마 변경";
 }

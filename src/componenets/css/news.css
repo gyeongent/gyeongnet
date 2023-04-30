@@ -7,7 +7,6 @@
     font-size: 35px;
     font-weight: 300;
     height: max-content;
-    background-color: white;
     z-index: -1;
     word-wrap: normal;
     letter-spacing: -5px;
@@ -32,6 +31,7 @@
     margin: 0 5em;
     padding: 25px 0;
     overflow-x: scroll;
+    color: black;
 }
 
 .newsContent > a {

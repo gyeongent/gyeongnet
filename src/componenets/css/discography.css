@@ -21,7 +21,7 @@ hr {
 
 .discoInfo {
     padding: 10px 20px;
-    color: black;
+    color: inherit;
     height: max-content;
 }
 
@@ -50,7 +50,7 @@ hr {
     left: 0;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    background-color: white;
+    background-color: inherit;
     position: absolute;
     padding-left: 5em;
 }
@@ -84,7 +84,7 @@ hr {
     white-space: nowrap;
     margin-top: 5px;
     margin-bottom: 5px;
-    color: black;
+    color: inherit;
 }
 
 .discoDesc {
@@ -164,7 +164,7 @@ hr {
     position: absolute;
     height: 75%;
     overflow: hidden;
-    background-color: white;
+    background-color: inherit;
     border-left: 1px solid rgb(0,0,0,0.2);
 }
 

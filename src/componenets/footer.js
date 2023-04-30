@@ -1,8 +1,15 @@
 import React from 'react';
 
+import '../App.css';
 import './css/footer.css';
 
 function Footer() {
+
+    const themeMode = () => {
+        const webApp = document.querySelector('body');
+
+        webApp.classList.toggle('dark')
+    }
 
     const date = new Date();
 
@@ -12,8 +19,9 @@ function Footer() {
         <div className="footer">
             <div className="backdrop" />
             <div>
-                &copy; {nowYear}. by GYEONG Studio / GYEONG.
+                &copy; 2020 - {nowYear}. GYEONG Studio / GYEONG. All rights reserved.
             </div>
+            <div className='mode' onClick={themeMode}/>
         </div>
     );
 }

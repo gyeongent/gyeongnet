@@ -55,3 +55,8 @@
     transform: rotate(360deg);
   }
 }
+
+.dark {
+  background-color: rgb(24, 24, 24);
+  color: white;
+}
