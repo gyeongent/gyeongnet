@@ -12,7 +12,13 @@
   overflow-x: hidden;
   scroll-behavior: smooth;
   word-wrap: break-word;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   min-height: 100vh;
+}
+
+.App::-webkit-scrollbar {
+  display: none;
 }
 
 .App-logo {

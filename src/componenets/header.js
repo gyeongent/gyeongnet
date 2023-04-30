@@ -52,13 +52,13 @@ function Burger() {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/download" onClick={PageReload}>
-                                다운로드
+                            <NavLink to="/news" onClick={PageReload}>
+                                뉴스
                             </NavLink>
                         </li>
                         <li>
                             <NavLink to="/army" onClick={PageReload}>
-                                보고싶은 군인 등록
+                                더캠프
                             </NavLink>
                         </li>
                         <li>
@@ -89,7 +89,7 @@ function Header() {
                         <li>
                             <div>
                                 <NavLink to="/army">
-                                    보고싶은 군인 등록
+                                    더캠프
                                 </NavLink>
                             </div>
                         </li>
@@ -109,8 +109,8 @@ function Header() {
                         </li>
                         <li>
                             <div>
-                                <NavLink to="/download">
-                                    다운로드
+                                <NavLink to="/news">
+                                    뉴스
                                 </NavLink>
                             </div>
                         </li>

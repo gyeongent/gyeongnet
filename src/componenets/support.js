@@ -23,9 +23,9 @@ function Status(){
                 현재 서비스 상태
             </div>
             <div className="statusTotal">
-                <StatusArticle stCircle="stOrange" stContent="홈페이지 상태" />
-                <StatusArticle stCircle="stOrange" stContent="메일 서비스" />
-                <StatusArticle stCircle="stRed" stContent="다운로드 서비스" />
+                <StatusArticle stCircle="stGreen" stContent="홈페이지 상태" />
+                <StatusArticle stCircle="stRed" stContent="메일 서비스" />
+                <StatusArticle stCircle="stOrange" stContent="다운로드 서비스" />
             </div>
         </div>
     );
@@ -39,7 +39,7 @@ function Issue(){
             </div>
             <div className="issueContent">
                 <div className="issueArticle">
-                     홈페이지 개편 작업으로 인한 점검
+                    메일 서비스 중단 및 다운로드 서비스 리뉴얼 작업
                 </div>
                 <div className="issueBar">
                     <hr className="issueHr" />
@@ -60,51 +60,6 @@ function Issue(){
     );
 }
 
-// function Problem(){
-
-//     function showContent(){
-//         var cktitle = document.querySelectorAll(".quesTitle")
-//         var ckdesc = document.querySelectorAll(".quesDesc")
-
-//         for (let i = 0; i < cktitle.length; i++){
-//             cktitle[i].addEventListener('click', () => {
-//                 ckdesc[i].classList.toggle('quesOpen')
-//             });
-//         }  
-//     }
-
-//     const quesList = quesArray.quesinfo.map((quesinfo, index) => {
-//         return(
-//             <div className="quesBox" key={index}>
-//                 <div className="quesTitle" onClick={() => showContent}>
-//                     { quesinfo.title }
-//                 </div>
-//                 <div className="quesDesc">
-//                     <hr />
-//                     { quesinfo.desc }
-//                 </div>
-//             </div>
-//         )
-//     })
-
-    
-
-//     return(
-//         <div className="supportQues">
-//             <hr className="splitHr"/>
-//             <div className="statusTitle">
-//                 무슨 문제가 발생했나요?
-//             </div>
-//             <div>
-//                 <input className="supportInput" type="text" id="searchQues" placeholder="어떤 문제가 발생했는지 적어주세요."/>
-//             </div>
-//             <div>
-//                 { quesList }
-//             </div>
-//         </div>
-//     );
-// }
-
 function OtherMail(){
     return(
         <div className="otherQues">
@@ -116,7 +71,8 @@ function OtherMail(){
                 아래 버튼을 눌러 자세한 내용을 알려주세요!
             </div>
             <div className="radiusButton" onClick={(e) => {
-                window.location.href = 'mailto:support@gyeong.net';
+                // window.location.href = 'mailto:support@gyeong.net';
+                alert('현재 메일 서비스를 이용할 수 없습니다.')
             }}>
                 메일 보내기
             </div>
