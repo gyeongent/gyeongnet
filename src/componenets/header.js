@@ -1,79 +1,39 @@
-import React, { useEffect } from 'react';
-import { NavLink, Link, useLocation } from 'react-router-dom';
+import React from 'react';
+import { NavLink, Link } from 'react-router-dom';
 import logo from '../logo.svg';
-import menuLogo from '../menu.svg';
 
+import { MdDarkMode } from 'react-icons/md'
+import { BiSupport, BiNews } from 'react-icons/bi'
+import { FaCompactDisc } from 'react-icons/fa'
+
+import thecampIcon from '../img/icon/thecamp.png'
 // import Announcement from './announcement';
 
 import './css/header.css';
 import './css/announcement.css';
 
-function Burger() {
-
-    function addOpen() {
-        var hamburgur = document.getElementById('menuLogo');
-
-        hamburgur.addEventListener("click", () => {
-                hamburgur.classList.toggle('open');
-                console.log('opned!')
-        });
-    }
-
-    function PageReload(){
-        let currentPath = ""
-        let location = useLocation();
-
-        useEffect(() => {
-        if(currentPath === location.pathname) window.location.reload();
-
-        currentPath = location.pathname;
-        }, [location])
-    }
-    
+function MobileArticle(props) {
     return(
-        <div>
-            <label for="toggle">
-                <div id="menuLogo" onClickCapture={ addOpen } className="">
-                    <img src={menuLogo} alt='Burger Menu' width='30vw'/>
+        <Link to={props.link}>
+            <div>
+                <div className="mobileIcon">
+                    {props.icon}
                 </div>
-            </label>
-            <input type="checkbox" id="toggle"/>
-            <div id="mobile-menu">
-                <div className="mmMain">
-                    <ul>
-                        <li>
-                            <NavLink to="/portfolio" onClick={PageReload}>
-                                포트폴리오
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/discography" onClick={PageReload}>
-                                디스코그래피
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/news" onClick={PageReload}>
-                                뉴스
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/army" onClick={PageReload}>
-                                더캠프
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/support" onClick={PageReload}>
-                                지원
-                            </NavLink>
-                        </li>
-                    </ul>
+                <div className="mobileTitle">
+                    {props.name}
                 </div>
             </div>
-        </div>
-    );
+        </Link>
+    )
 }
 
 function Header() {
+    const themeMode = () => {
+        const webApp = document.querySelector('body');
+
+        webApp.classList.toggle('dark')
+    }
+
     return (
         <>
             {/* <Announcement /> */}
@@ -121,10 +81,19 @@ function Header() {
                                 </NavLink>
                             </div>
                         </li>
+                        <li>
+                            <div className='desktopMode' onClick={themeMode}>
+                                <MdDarkMode />
+                            </div>
+                        </li>
                     </ul>
-                    <div className="burgerMenu">
-                        <Burger />
-                    </div>
+                </div>
+                <div className="mobileMenu">
+                    <MobileArticle icon={<BiNews />} name="포트폴리오" link="/portfolio" />
+                    <MobileArticle icon={<FaCompactDisc />} name="디스코그래피" link="/discography" />
+                    <MobileArticle icon={<BiNews />} name="뉴스" link="/news" />
+                    <MobileArticle icon={<BiSupport />}name="지원" link="/support" />
+                    <MobileArticle icon={<img src={thecampIcon} style={{width: "1.5em"}}/>}name="더캠프" link="/army" />
                 </div>
             </div>
         </>
