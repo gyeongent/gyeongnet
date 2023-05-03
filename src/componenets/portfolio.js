@@ -105,6 +105,7 @@ function MusicArticle(){
                     <div className='spotifyEmbed'>
                         <Spotify link="https://open.spotify.com/track/5BeYJK9XcUbFDHyAV4xx9a?si=9bcbb22f7881496c" />
                         <Spotify link="https://open.spotify.com/track/3zATKvMnPHRZuUH70jtAWf?si=1034511bf26d4543" />
+                        <Spotify link="https://open.spotify.com/track/2ZblMEx8BtY4kc7Ddt95TF?si=c04f3e397fe44f6d" />
                     </div>
                 </div>
             </div>
