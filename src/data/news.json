@@ -1,6 +1,14 @@
 {
     "newsinfo": [
         {
+            "date": "230527",
+            "ogdate": "2023년 5월 27일",
+            "title": "「Alone」 싱글이 발매됩니다.",
+            "desc": "2023년 마지막 싱글 「Alone」이 2023년 6월 7일에 발매됩니다.(일부 국가 제외) 총 3곡 「불안장애(Anxiety)」, 「혼자만의 시간(Alone Time)」, 「깊은 밤(Old Night)」이 수록될 예정입니다. 모든 스트리밍 사이트에서 들어보실 수 있으며, 자세한 사양은 디스코그래피 탭을 이용해주세요.",
+            "img": "https://service.oz-z.com/upload/album/OZ23S01830/OZ23S01830.jpg",
+            "imgClass": "block"
+        },
+        {
             "date": "230420",
             "ogdate": "2023년 4월 20일",
             "title": "EP 앨범이 발매됩니다.",
