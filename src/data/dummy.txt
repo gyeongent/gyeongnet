@@ -1,0 +1,15 @@
+        {
+            "id": 4,
+            "name": "쉬폰(Chiffon)",
+            "release": "2024.",
+            "type": "디지털",
+            "class": "diigtal",
+            "trackNum": ["1"],
+            "trackName": ["쉬폰(Chiffon)"],
+            "trackLength": ["-"],
+            "url": "chiffon",
+            "img": "https://i.ibb.co/D848fFK/soon.jpg",
+            "copyright": "© 2024 GYEONG",
+            "publisher": "℗ 2024 GYEONG, under license to OZZ",
+            "notice": "현재 발매 진행중인 앨범이며, 추후 사양이 변경될 수 있습니다."
+        },
