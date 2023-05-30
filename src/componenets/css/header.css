@@ -119,9 +119,17 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
+    .header {
+        height: 80px;
+    }
+
+    .backdrop {
+        height: 80px;
+    }
 
     .header > .HeaderArticle_1 {
         margin-left: 20px;
+        height: 80px;
     }
 
     .header > .HeaderArticle_1 > ul {

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 // import { Parallax } from 'react-parallax';
 import { Link } from 'react-router-dom';
 import newsjson from '../data/news.json';
+import Youtube from "react-youtube"
 
 import { ImNewTab } from 'react-icons/im'
 
@@ -138,6 +139,28 @@ function Articles(){
     )
 }
 
+function YoutubeArticle(){
+    return(
+        <div>
+            <div className="HomeTop">
+                <Youtube 
+                    videoId="E0H4HWLL0u0"
+                    opts={{
+                        width: "100%",
+                        height: "100%",
+                        playerVars: {
+                          autoplay: 1,
+                          rel: 0,
+                          modestbranding: 1
+                        }
+                    }}
+                    className='youtubeapi'
+                />
+            </div>
+        </div>
+    )
+}
+
 
 function Home() {
 
@@ -145,6 +168,7 @@ function Home() {
       <div className="homeBody">
         <HomeScreen />
         <AllNews />
+        <YoutubeArticle />
         <Articles />
       </div>
     );
