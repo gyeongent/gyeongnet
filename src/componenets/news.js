@@ -13,7 +13,8 @@ function News() {
             <NavLink to={'/news/' + newsinfo.date } key={index}>
                 <div className="NewsContents_Box">
                     <div className='NewsContents'>
-                        { newsinfo.title }
+                        <div>{ newsinfo.title }</div>
+                        <p>{ newsinfo.ogdate }</p>
                     </div>
                 </div>
             </NavLink>
