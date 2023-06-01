@@ -165,7 +165,7 @@ hr {
     height: 75%;
     overflow: hidden;
     background-color: inherit;
-    border-left: 1px solid rgb(0,0,0,0.2);
+    border-left: 1px solid lightgray;
 }
 
 .New::-webkit-scrollbar {
@@ -290,7 +290,7 @@ hr {
         border: none;
         min-height: max-content;
         margin-top: 5em;
-        border-top: 1px solid rgb(0,0,0,0.2);
+        border-top: 1px solid lightgray;
     }
 
     .newsdiscoContentDetail {
