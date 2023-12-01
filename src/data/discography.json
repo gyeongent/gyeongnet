@@ -16,6 +16,20 @@
             "notice": "현재 발매 진행중인 앨범이며, 추후 사양이 변경될 수 있습니다."
         },
         {
+            "id": 4,
+            "name": "롤러스케이트(Rollerskates)",
+            "release": "2023. 12. 2",
+            "type": "싱글",
+            "class": "digital",
+            "trackNum": ["1"],
+            "trackName": ["롤러스케이트(Rollerskates)"],
+            "trackLength": ["2:32"],
+            "url": "rollerskates",
+            "img": "https://service.oz-z.com/upload/album/OZ23A00762/OZ23A00762.jpeg",
+            "copyright": "© 2023 GYEONG",
+            "publisher": "℗ 2023 GYEONG, under license to OZZ"
+        },
+        {
             "id": 3,
             "name": "Alone",
             "release": "2023. 6. 7.",

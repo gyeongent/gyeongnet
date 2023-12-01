@@ -5,14 +5,14 @@
 
 .newsSide {
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 900;
     height: max-content;
     z-index: -1;
     word-wrap: normal;
     letter-spacing: -5px;
     display: flex;
     justify-content:flex-start;
-    margin: 1em 2em;
+    margin: 0.5em 2em;
     align-items: center;
 }
 

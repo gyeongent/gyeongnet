@@ -46,13 +46,13 @@ function Header() {
                         </Link>
                     </div>
                     <ul>
-                        <li>
+                        {/* <li>
                             <div>
                                 <NavLink to="/army">
                                     더캠프
                                 </NavLink>
                             </div>
-                        </li>
+                        </li> */}
                         <li>
                             <div>
                                 <NavLink to="/portfolio">
@@ -93,7 +93,7 @@ function Header() {
                     <MobileArticle icon={<FaCompactDisc />} name="디스코그래피" link="/discography" />
                     <MobileArticle icon={<BiNews />} name="뉴스" link="/news" />
                     <MobileArticle icon={<BiSupport />}name="지원" link="/support" />
-                    <MobileArticle icon={<img src={thecampIcon} style={{width: "1.5em"}}/>}name="더캠프" link="/army" />
+                    {/* <MobileArticle icon={<img src={thecampIcon} style={{width: "1.5em"}}/>}name="더캠프" link="/army" /> */}
                 </div>
             </div>
         </>
