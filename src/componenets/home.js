@@ -88,7 +88,7 @@ function NewsTap(props) {
 
 function AllNews() {
 
-    const setDate = new Date("2023-06-27T00:00:00+0900");
+    const setDate = new Date("2024-12-26T00:00:00+0900");
     const nowDate = new Date();
     const distanceDate = setDate.getTime() - nowDate.getTime();
     const day = Math.floor(distanceDate/(1000*60*60*24) + 1)
@@ -107,10 +107,10 @@ function AllNews() {
                 bgcolor="sea"
                 tapName="🗓️ 주요 일정"
                 dateId="singleDate"
-                newsTitle={'육군 제3보병사단 입대'}
-                newsDate={`D - ${day}`}
-                linkto={'/army'}
-                moreLink={'/army'}
+                newsTitle={'Today EP 발매'}
+                newsDate={`?`}
+                linkto={ '/news/' + newsjson.newsinfo[0].date }
+                moreLink={'/discography'}
             />
         </div>
     );
@@ -149,7 +149,7 @@ function YoutubeArticle(){
                         width: "100%",
                         height: "100%",
                         playerVars: {
-                          autoplay: 1,
+                          autoplay: 0,
                           rel: 0,
                           modestbranding: 1
                         }
