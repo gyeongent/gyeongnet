@@ -107,6 +107,7 @@ function MusicArticle(){
                         <Spotify link="https://open.spotify.com/track/3zATKvMnPHRZuUH70jtAWf?si=1034511bf26d4543" />
                         <Spotify link="https://open.spotify.com/track/2ZblMEx8BtY4kc7Ddt95TF?si=c04f3e397fe44f6d" />
                         <Spotify link="https://open.spotify.com/track/1VBYQPRnWIIP1mpGgwEiqW?si=e387604ffcc14fd4" />
+                        <Spotify link="https://open.spotify.com/track/2ZRMyrZTNVLPhMpZRj4N2b?si=Q1lATGQ7QCiWh7cLK8n_7A" />
                     </div>
                 </div>
             </div>
