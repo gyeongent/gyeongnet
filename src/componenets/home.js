@@ -107,7 +107,7 @@ function AllNews() {
                 bgcolor="sea"
                 tapName="🗓️ 주요 일정"
                 dateId="singleDate"
-                newsTitle={'Today EP 발매'}
+                newsTitle={'「Cue Sign」 EP 발매'}
                 newsDate={`?`}
                 linkto={ '/news/' + newsjson.newsinfo[0].date }
                 moreLink={'/discography'}
