@@ -1,6 +1,14 @@
 {
     "newsinfo": [
         {
+            "date": "20240515",
+            "ogdate": "2024년 5월 15일",
+            "title": "디지털 싱글 「슬픈 장난감 공장」이 발매됩니다.",
+            "desc": "2024년 6월 28일, 새로운 디지털 싱글 「슬픈 장난감 공장(A Sad Toy Factory)」이 발매될 예정입니다, 모든 국가 및 음원 사이트에서 만나보실 수 있습니다. 자세한 내용은 디스코그래피 탭을 참고해주세요.",
+            "img": "https://down.mixtape.so/NAS/img/3/6/2/3/3623450507fc8782ecdd97efa0f0ee64.jpg",
+            "imgClass": "block"
+        },
+        {
             "date": "20240101",
             "ogdate": "2024년 1월 1일(1월 21일 수정)",
             "title": "「Cue Sign」 EP 앨범 발매 결정",
