@@ -10,7 +10,6 @@ import News from './componenets/news';
 import Discography from "./componenets/discography";
 import Support from "./componenets/support";
 import DownloadPage from './componenets/download';
-import ArmyPage from './componenets/army';
 
 import './App.css';
 import ToonsPage from './componenets/toons';
@@ -34,7 +33,6 @@ function App() {
               <Route path="/news/:newsId" element={<News />} />
               <Route path='/toons' element={ <ToonsPage />} />
               <Route path='/toons/zone' element={ <Zone />} />
-              <Route path='/army' element={<ArmyPage />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </div>
