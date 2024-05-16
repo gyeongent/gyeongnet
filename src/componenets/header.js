@@ -7,7 +7,7 @@ import { BiSupport, BiNews } from 'react-icons/bi'
 import { FaCompactDisc } from 'react-icons/fa'
 
 import thecampIcon from '../img/icon/thecamp.png'
-// import Announcement from './announcement';
+import Announcement from './announcement';
 
 import './css/header.css';
 import './css/announcement.css';
@@ -36,7 +36,7 @@ function Header() {
 
     return (
         <>
-            {/* <Announcement /> */}
+            <Announcement />
             <div className="header">
                 <div className="backdrop"/>
                 <div className="HeaderArticle_1">
