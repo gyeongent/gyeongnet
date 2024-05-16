@@ -88,7 +88,7 @@ function NewsTap(props) {
 
 function AllNews() {
 
-    const setDate = new Date("2024-12-26T00:00:00+0900");
+    const setDate = new Date("2024-06-28T00:00:00+1800");
     const nowDate = new Date();
     const distanceDate = setDate.getTime() - nowDate.getTime();
     const day = Math.floor(distanceDate/(1000*60*60*24) + 1)
@@ -107,10 +107,10 @@ function AllNews() {
                 bgcolor="sea"
                 tapName="🗓️ 주요 일정"
                 dateId="singleDate"
-                newsTitle={'「Cue Sign」 EP 발매'}
-                newsDate={`?`}
+                newsTitle={'「슬픈 장난감 공장」 디지털 싱글 발매'}
+                newsDate={day}
                 linkto={ '/news/' + newsjson.newsinfo[0].date }
-                moreLink={'/discography'}
+                moreLink={'/discography/astf'}
             />
         </div>
     );
