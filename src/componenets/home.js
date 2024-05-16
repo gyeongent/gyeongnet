@@ -108,7 +108,7 @@ function AllNews() {
                 tapName="🗓️ 주요 일정"
                 dateId="singleDate"
                 newsTitle={'「슬픈 장난감 공장」 디지털 싱글 발매'}
-                newsDate={day}
+                newsDate={'D-' + day}
                 linkto={ '/news/' + newsjson.newsinfo[0].date }
                 moreLink={'/discography/astf'}
             />
