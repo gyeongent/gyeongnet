@@ -1,6 +1,21 @@
 {
     "discoinfo" : [
         {
+            "id": 7,
+            "name": "실루엣(silhouettes)",
+            "release": "2024. 8. 17. 예정",
+            "type": "디지털",
+            "class": "digital",
+            "trackNum": ["1"],
+            "trackName": ["실루엣(silhoueetes)"],
+            "trackLength": ["3:22"],
+            "url": "silhouettes",
+            "img": "https://down.mixtape.so/NAS/img/9/5/7/5/9575168154a809378e0a11fe5ea4d849.jpg",
+            "copyright": "© 2024 GYEONG Studio",
+            "publisher": "℗ 2024 GYEONG Studio, under license to mixtape.so",
+            "notice": "현재 발매 진행중인 앨범이며, 추후 사양이 변경될 수 있습니다."
+        },
+        {
             "id": 6,
             "name": "슬픈 장난감 공장(A Sad Toy Factory)",
             "release": "2024. 6. 28.",
