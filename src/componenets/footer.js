@@ -21,7 +21,7 @@ function Footer() {
         <div className="footer">
             <div className="backdrop" />
             <div className="fc">
-                &copy; 2020 - {nowYear}. GYEONG Studio / GYEONG. All rights reserved.
+                &copy; 2020 - {nowYear}. GYEONG Studio™ / GYEONG. All rights reserved.
             </div>
             <div className='mode' onClick={themeMode}>
                 <MdDarkMode />
