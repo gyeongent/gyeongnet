@@ -107,10 +107,10 @@ function AllNews() {
                 bgcolor="sea"
                 tapName="🗓️ 주요 일정"
                 dateId="singleDate"
-                newsTitle={'「실루엣」 디지털 싱글 발매'}
-                newsDate={'D - ' + day}
-                linkto={ '/news/' + newsjson.newsinfo[0].date }
-                moreLink={'/discography/astf'}
+                newsTitle={'주요 일정이 없습니다.'}
+                newsDate={'none'}
+                linkto={ '' }
+                moreLink={''}
             />
         </div>
     );
