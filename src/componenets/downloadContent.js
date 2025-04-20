@@ -4,6 +4,8 @@ import "./css/downloadContent.css";
 
 import GSBanner from "../images/GS_banner.png";
 
+import GYEONGSans from "../fonts/GYEONGSans-Bold.otf";
+
 function DownloadContent() {
   const { category } = useParams();
 
@@ -21,7 +23,7 @@ function DownloadContent() {
           </div>
           <div className="DownloadDesc">
             <h2>폰트 다운로드</h2>
-            <a href="/fonts/GYEONGSans-Bold.otf" download>
+            <a href={GYEONGSans} download>
               <span className="downloadButton">GYEONG Sans Bold.otf</span>
             </a>
             <ul className="changeLog">

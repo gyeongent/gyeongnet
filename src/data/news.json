@@ -1,6 +1,14 @@
 {
   "newsinfo": [
     {
+      "date": "20250420",
+      "ogdate": "2025년 4월 20일",
+      "title": "GYEONG Sans 폰트의 베타 버전이 공개되었습니다.",
+      "desc": "GYEONG Studio의 첫번째 폰트인 GYEONG Sans의 베타 버전이 공개되었습니다. 현재 버전은 불안정하며, 수정을 통해 완성될 예정입니다. 자세한 사항은 아래 링크를 참고해주세요.\n\nhttps://gyeong.net/download/font",
+      "img": "https://down.mixtape.so/NAS/img/9/5/7/5/9575168154a809378e0a11fe5ea4d849.jpg",
+      "imgClass": "none"
+    },
+    {
       "date": "20250307",
       "ogdate": "2025년 3월 7일",
       "title": "웹 포트폴리오가 새롭게 개편되었습니다.",
