@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;400;700;900&display=swap');
-@import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;400;700;900&display=swap");
+@import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700;900&display=swap");
 @font-face {
-  font-family: 'Pretendard-Regular';
-  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 .App {
-  margin-top: 30px;
-  padding: 0;
-  font-family: 'Jost', 'Spoqa Han Sans Neo', 'Noto Sans KR', 'sans-serif';
+  padding: 2em;
+  font-family: "Jost", "Spoqa Han Sans Neo", "Noto Sans KR", "sans-serif";
   font-weight: 100;
   letter-spacing: -1px;
   overflow-x: hidden;
@@ -20,6 +20,7 @@
   scrollbar-width: none;
   -ms-overflow-style: none;
   min-height: 100vh;
+  background-color: #121415;
 }
 
 .App::-webkit-scrollbar {
@@ -64,4 +65,10 @@
 .dark {
   background-color: rgb(24, 24, 24);
   color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .App {
+    padding: 1.2em;
+  }
 }

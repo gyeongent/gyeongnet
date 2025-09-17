@@ -1,184 +1,184 @@
 .gallery_nav {
-    position: absolute;
-    top: 1100px;
-    left: 0;
-    font-size: 50px;
+  position: absolute;
+  top: 1100px;
+  left: 0;
+  font-size: 50px;
 }
 
 .ContentsSection {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    padding-top: 80px;
-    margin-bottom: 160px;
-    background-color: white;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 80px;
+  margin-bottom: 160px;
+  background-color: white;
 }
 
 .gallery {
-    display: flex;
-    transition: all 0.2s ease;
-    animation: moveGallery 25s linear infinite alternate;
+  display: flex;
+  transition: all 0.2s ease;
+  animation: moveGallery 25s linear infinite alternate;
 }
 
 @keyframes moveGallery {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-2240px);
-    }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-2240px);
+  }
 }
 
 .pfo_contents {
-    display: flex;
-    flex-direction: row;
-    padding: 0 10em;
-    height: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 0 10em;
+  height: 100%;
 }
 
 .pfo_contents > div {
-    width: 100%;
+  width: 100%;
 }
 
-.pfoArticle{
-    padding: 100px 0;
-    width: 100%;
+.pfoArticle {
+  padding: 100px 0;
+  width: 100%;
+  color: #f5f5f5;
 }
 
 .pfoFirst {
-    width: 70%;
+  width: 70%;
 }
 
 .pfoArticle:hover > .pfoFirst > .pfoTitle {
-    width: max-content;
-    height: max-content;
-    background: linear-gradient(170deg, GoldenRod, darkgreen);
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    transition: all 0.3s ease;
+  width: max-content;
+  height: max-content;
+  background: linear-gradient(170deg, GoldenRod, darkgreen);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 0.3s ease;
 }
 
 .pfoTitle {
-    font-weight: 700;
-    font-size: 50px;
-    letter-spacing: -4px;
-    transition: all 0.3s ease;
-    color: inherit;
+  font-weight: 700;
+  font-size: 50px;
+  letter-spacing: -4px;
+  transition: all 0.3s ease;
+  color: inherit;
 }
 
 .pfoDesc {
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    font-weight: 400;
-    word-break: keep-all;
-    margin-top: 10px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  word-break: keep-all;
+  margin-top: 10px;
 }
 
 .pfoDesc > span {
-    font-weight: 700;
-    margin-bottom: 10px;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .spotifyEmbed {
-    margin-top: 20px;
-    display: flex;
+  margin-top: 20px;
+  display: flex;
 }
 
 .spotifyEmbed > iframe {
-    margin-right: 15px;
+  margin-right: 15px;
 }
 
 .pfoGraphicPictures {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    width: auto;
-    height: 350px;
-    overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: auto;
+  height: 350px;
+  overflow: hidden;
 }
 
 .pfoGraphicPictures > .gallery > div {
-    min-width: 300px;
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-    border-radius: 15px;
+  min-width: 300px;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  border-radius: 15px;
 }
 
 .pfoGraphicPictures > .gallery > div > img {
-    width: 300px;
+  width: 300px;
 }
 
 .linkto {
-    font-weight: 400;
-    font-size: 17px;
-    margin: 10px 0;
-    color: darkolivegreen;
+  font-weight: 400;
+  font-size: 17px;
+  margin: 10px 0;
+  color: darkolivegreen;
 }
 
 @media only screen and (max-width: 768px) {
+  .homeBody {
+    width: 100%;
+  }
 
-    .homeBody {
-        width: 100%;
-    }
+  .pfo_contents {
+    display: block;
+    width: auto;
+    padding: 5vw 0;
+  }
 
-    .pfo_contents {
-        display: block;
-        width: auto;
-        padding: 5vw;
-    }
+  .pfo_nav {
+    width: 90%;
+    top: none;
+    left: none;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
 
-    .pfo_nav {
-        width: 90%;
-        top: none;
-        left: none;
-        background-color: #fff;
-        text-align: center;
-        padding-top: 5vh;
-        padding-bottom: 5vh;
-    }
+  .pfo_nav > ul {
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;
+  }
 
-    .pfo_nav > ul {
-        display: flex;
-        width: 95%;
-        justify-content: space-between;
-        margin: 0;
-        align-items: center;
-    }
-    
-    .pfo_nav > ul > li {
-        padding: 20px;
-        font-weight: 700;
-        font-size: 20px;
-        width: max-content;
-    }
+  .pfo_nav > ul > li {
+    padding: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    width: max-content;
+  }
 
-    .pfo_info {
-        width: 80%;
-        padding: 5vw;
-    }
+  .pfo_info {
+    width: 80%;
+    padding: 5vw;
+  }
 
-    .pfoArticle {
-        margin: 0 1em;
-        width: auto;
-    }
+  .pfoArticle {
+    margin: 0 1em;
+    width: auto;
+  }
 
-    .pfoFirst {
-        width: auto;
-    }
+  .pfoFirst {
+    width: auto;
+  }
 
-    .spotifyEmbed {
-        overflow-x: scroll;
-        width: auto;
-        scrollbar-width: none;
-        -ms-overflow-style: none;
-    }
-    .spotifyEmbed::-webkit-scrollbar{
-        display: none;
-    }
+  .spotifyEmbed {
+    overflow-x: scroll;
+    width: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .spotifyEmbed::-webkit-scrollbar {
+    display: none;
+  }
 }

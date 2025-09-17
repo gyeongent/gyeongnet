@@ -1,33 +1,29 @@
-import React from 'react';
+import React from "react";
 
-import '../App.css';
-import './css/footer.css';
+import "../App.css";
+import "./css/footer.css";
 
-import { MdDarkMode } from 'react-icons/md'
+import { MdDarkMode } from "react-icons/md";
 
 function Footer() {
-    const themeMode = () => {
-        const webApp = document.querySelector('body');
+  const themeMode = () => {
+    const webApp = document.querySelector("body");
 
-        webApp.classList.toggle('dark')
-    }
+    webApp.classList.toggle("dark");
+  };
 
+  const date = new Date();
 
-    const date = new Date();
+  const nowYear = date.getFullYear();
 
-    const nowYear = date.getFullYear();
-
-    return(
-        <div className="footer">
-            <div className="backdrop" />
-            <div className="fc">
-                &copy; 2020 - {nowYear}. GYEONG Studio™ / GYEONG. All rights reserved.
-            </div>
-            <div className='mode' onClick={themeMode}>
-                <MdDarkMode />
-            </div>
-        </div>
-    );
+  return (
+    <div className="footer">
+      <div className="backdrop" />
+      <div className="fc">
+        &copy; 2020 - {nowYear}. GYEONG Studio™ / GYEONG. All rights reserved.
+      </div>
+    </div>
+  );
 }
 
 export default Footer;

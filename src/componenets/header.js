@@ -7,91 +7,56 @@ import { BiSupport, BiNews, BiDownload } from "react-icons/bi";
 import { FaCompactDisc } from "react-icons/fa";
 import Announcement from "./announcement";
 
+import CardNav from "../blocks/CardNav/CardNav";
+
 import "./css/header.css";
 import "./css/announcement.css";
 
-function MobileArticle(props) {
-  return (
-    <Link to={props.link}>
-      <div>
-        <div className="mobileIcon">{props.icon}</div>
-        <div className="mobileTitle">{props.name}</div>
-      </div>
-    </Link>
-  );
-}
-
 function Header() {
-  const themeMode = () => {
-    const webApp = document.querySelector("body");
-
-    webApp.classList.toggle("dark");
-  };
+  const items = [
+    {
+      label: "GYEONG Studio",
+      bgColor: "#1a1a1a",
+      textColor: "#f5f5f5",
+      links: [
+        { label: "포트폴리오", href: "/portfolio", ariaLabel: "포트폴리오" },
+        { label: "디스코그래피", ariaLabel: "도전기", href: "/discography" },
+        { label: "뉴스", ariaLabel: "느끼는 감정들", href: "/news" },
+        { label: "지원", ariaLabel: "도전기", href: "/support" },
+      ],
+    },
+    {
+      label: "GUMMY",
+      bgColor: "#f27cbd",
+      textColor: "#000",
+      links: [
+        { label: "소개", ariaLabel: "브랜드 소개" },
+        { label: "둘러보기", ariaLabel: "굿즈 둘러보기" },
+      ],
+    },
+    {
+      label: "Contact",
+      bgColor: "#271E37",
+      textColor: "#fff",
+      links: [
+        { label: "Email", ariaLabel: "Email us" },
+        { label: "Twitter", ariaLabel: "Twitter" },
+        { label: "LinkedIn", ariaLabel: "LinkedIn" },
+      ],
+    },
+  ];
 
   return (
     <>
-      {/* <Announcement /> */}
-      <div className="header">
-        <div className="backdrop" />
-        <div className="HeaderArticle_1">
-          <div>
-            <Link to="/">
-              <img src={logo} alt="logo" />
-            </Link>
-          </div>
-          <ul>
-            <li>
-              <div>
-                <NavLink to="/download">다운로드</NavLink>
-              </div>
-            </li>
-            <li>
-              <div>
-                <NavLink to="/portfolio">포트폴리오</NavLink>
-              </div>
-            </li>
-            <li>
-              <div>
-                <NavLink to="/discography">디스코그래피</NavLink>
-              </div>
-            </li>
-            <li>
-              <div>
-                <NavLink to="/news">뉴스</NavLink>
-              </div>
-            </li>
-            <li>
-              <div>
-                <NavLink to="/support">지원</NavLink>
-              </div>
-            </li>
-            <li>
-              <div className="desktopMode" onClick={themeMode}>
-                <MdDarkMode />
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div className="mobileMenu">
-          <MobileArticle
-            icon={<BiNews />}
-            name="포트폴리오"
-            link="/portfolio"
-          />
-          <MobileArticle
-            icon={<FaCompactDisc />}
-            name="디스코그래피"
-            link="/discography"
-          />
-          <MobileArticle icon={<BiNews />} name="뉴스" link="/news" />
-          <MobileArticle icon={<BiSupport />} name="지원" link="/support" />
-          <MobileArticle
-            icon={<BiDownload />}
-            name="다운로드"
-            link="/download"
-          />
-        </div>
-      </div>
+      <CardNav
+        logo={logo}
+        items={items}
+        baseColor="rgba(255, 255, 255, 0.14)"
+        menuColor="#000"
+        buttonBgColor="#111"
+        buttonTextColor="#fff"
+        ease="power3.out"
+      />
     </>
   );
 }
