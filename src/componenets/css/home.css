@@ -89,7 +89,9 @@ button {
 }
 
 .homeBody {
-  padding: 6em 12em;
+  padding: 6em 0em;
+  max-width: 850px;
+  margin: 0 auto;
 }
 
 .HNewsTap {
