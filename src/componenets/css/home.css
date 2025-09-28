@@ -89,8 +89,8 @@ button {
 }
 
 .homeBody {
-  padding: 6em 0em;
-  max-width: 850px;
+  padding: 6em 0;
+  width: 850px;
   margin: 0 auto;
 }
 
@@ -173,6 +173,8 @@ button {
   transition: all 0.3s ease;
   flex: 1 1;
   border: 2px solid rgba(255, 255, 255, 0.15);
+  overflow: hidden;
+  position: relative;
 }
 
 .gummySection:hover {
@@ -194,6 +196,22 @@ button {
   font-weight: 400;
   letter-spacing: -0.5px;
   line-height: 1.5;
+}
+
+.gummyImg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+.gummyImg img {
+  margin: 0 auto;
+  width: 720px;
 }
 
 .HNewsTapContents {
@@ -298,7 +316,6 @@ button {
   justify-content: center;
   margin: 0 auto;
   padding: 2.5em;
-  margin: 0 7.5em;
   background: url(../../img/honey_moon.png);
   background-position: center;
   background-size: cover;

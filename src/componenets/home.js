@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import newsjson from "../data/news.json";
 import Youtube from "react-youtube";
 
+import GummyImg from "../img/gummy_outline.png";
+
 import { ImNewTab } from "react-icons/im";
 
 import "./css/home.css";
@@ -167,6 +169,9 @@ function Gummy() {
           바로가기 <ImNewTab />
         </div>
       </a>
+      <div className="gummyImg">
+        <img src={GummyImg} alt="gummy" />
+      </div>
     </div>
   );
 }

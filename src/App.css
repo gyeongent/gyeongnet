@@ -21,6 +21,7 @@
   -ms-overflow-style: none;
   min-height: 100vh;
   background-color: #121415;
+  color: #f5f5f5;
 }
 
 .App::-webkit-scrollbar {

@@ -32,7 +32,7 @@
 .pfo_contents {
   display: flex;
   flex-direction: row;
-  padding: 0 10em;
+  padding: 0;
   height: 100%;
 }
 
@@ -47,7 +47,7 @@
 }
 
 .pfoFirst {
-  width: 70%;
+  width: 100%;
 }
 
 .pfoArticle:hover > .pfoFirst > .pfoTitle {
